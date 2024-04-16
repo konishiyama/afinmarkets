@@ -1,30 +1,33 @@
 "use client";
-
 import { usePathname } from "next/navigation";
+import { NextPage } from "next";
 import Link from "next/link";
 import { i18n, type Locale } from "../../../i18n-config";
+import ReactCountryFlag from "react-country-flag";
 
-export default function LocaleSwitcher() {
+interface HeaderProps {
+  lang: Locale;
+}
+
+const LocaleSwitcher: NextPage<HeaderProps> = ({ lang }) => {
   const pathName = usePathname();
-  const redirectedPathName = (locale: Locale) => {
+  const redirectedPathName = (locale: string) => {
     if (!pathName) return "/";
     const segments = pathName.split("/");
     segments[1] = locale;
     return segments.join("/");
   };
 
+  const destination = lang === "ko" ? "ja" : "ko";
+  const countryCode = lang === "ko" ? "JP" : "KR";
+
   return (
-    <div>
-      <p>Locale switcher:</p>
-      <ul>
-        {i18n.locales.map((locale) => {
-          return (
-            <li key={locale}>
-              <Link href={redirectedPathName(locale)}>{locale}</Link>
-            </li>
-          );
-        })}
-      </ul>
-    </div>
+    <>
+      <Link href={redirectedPathName(destination)}>
+        <ReactCountryFlag countryCode={countryCode} />
+      </Link>
+    </>
   );
-}
+};
+
+export default LocaleSwitcher;
