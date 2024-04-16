@@ -1,8 +1,8 @@
 import { getDictionary } from "../../get-dictionary";
 import { Locale } from "../../i18n-config";
-import Counter from "./components/counter";
-import LocaleSwitcher from "./components/locale-switcher";
+import LocaleSwitcher from "./components/LocaleSwitcher";
 import Header from "./components/Header";
+import Language from "./components/Language";
 
 export default async function IndexPage({
   params: { lang },

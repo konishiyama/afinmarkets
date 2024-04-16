@@ -3,7 +3,7 @@
 import { NextPage } from "next";
 import Link from "next/link";
 import { type Locale } from "../../../i18n-config";
-import LocaleSwitcher from "./locale-switcher";
+import LocaleSwitcher from "./LocaleSwitcher";
 
 interface Dictionary {
   header_title: string;
