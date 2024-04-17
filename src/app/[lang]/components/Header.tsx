@@ -1,12 +1,19 @@
 "use client";
 
 import { NextPage } from "next";
+import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { type Locale } from "../../../i18n-config";
 import LocaleSwitcher from "./LocaleSwitcher";
+import logo from "/public/images/20240414_logo.png";
+import HeaderMenu from "./HeaderMenu";
 
 interface Dictionary {
-  header_title: string;
+  Product: string;
+  Features: string;
+  Team: string;
+  JoinUs: string;
 }
 
 interface HeaderProps {
@@ -15,27 +22,63 @@ interface HeaderProps {
 }
 
 const Header: NextPage<HeaderProps> = ({ header_props, lang }) => {
+  const [clientWindowHeight, setClientWindowHeight] = useState<number>(0);
+  const [headerBackground, setHeaderBackground] = useState("0, 0, 0, 0");
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
+
+  const handleScroll = () => {
+    setClientWindowHeight(window.scrollY);
+  };
+
+  useEffect(() => {
+    if (clientWindowHeight > 35) {
+      setHeaderBackground("255, 255, 255, 255");
+    } else {
+      setHeaderBackground("0, 0, 0, 0");
+    }
+  }, [clientWindowHeight]);
+
   return (
-    <header className="bg-white">
-      <nav
-        className="mx-auto flex max-w-7xl items-center justify-between py-6 px-6 lg:py-8 px-8"
-        aria-label="Global"
-      >
-        <div className="flex lg:flex-1">
-          <LocaleSwitcher lang={lang} />
-        </div>
-        <h1 className="text-xl font-semibold">
-          <Link href={`/${lang}`}>{header_props.header_title}</Link>
-        </h1>
-        <div className="lg:flex lg:flex-1 lg:justify-end">
-          <Link
-            href={`/${lang}/about`}
-            className="text-sm text-base font-semibold leading-6 "
-          >
-            About
-          </Link>
-        </div>
-      </nav>
+    <header
+      className="sticky top-0"
+      style={{
+        backgroundColor: `rgba(${headerBackground})`,
+      }}
+    >
+      <div className="px-4 mx-auto max-w-full xl:max-w-screen-xl">
+        <nav
+          className="flex justify-between items-center py-6"
+          aria-label="Global"
+        >
+          <div className="lg:flex lg:flex-1">
+            <Link
+              href={`/${lang}`}
+              className="text-sm text-base font-semibold leading-6 "
+            >
+              <Image
+                src={logo} // Route of the image file
+                alt="Afin Tech Logo"
+                className="w-56"
+              />
+            </Link>
+          </div>
+          <div className="lg:flex lg:pt-2">
+            <ul className="lg:flex lg:items-center lg:w-auto lg:space-x-20">
+              <HeaderMenu name={header_props.Product} />
+              <HeaderMenu name={header_props.Features} />
+              <HeaderMenu name={header_props.Team} />
+              <HeaderMenu name={header_props.JoinUs} />
+            </ul>
+          </div>
+          <div className="flex lg:flex-1  lg:justify-end lg:pt-2">
+            <LocaleSwitcher lang={lang} />
+          </div>
+        </nav>
+      </div>
     </header>
   );
 };

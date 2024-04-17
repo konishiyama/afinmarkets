@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={params.lang}>
-      <body className="flex flex-col min-h-screen flex-grow font-sans text-base bg-white">
+      <body className="flex flex-col min-h-screen flex-grow font-sans bg-white">
         {children}
       </body>
       {/* <body className={inter.className}>{children}</body> */}

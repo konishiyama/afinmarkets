@@ -22,7 +22,9 @@ module.exports = {
         sans: ["Arial", "sans-serif"],
       },
       colors: {
-        base: "#202124",
+        base: "#222d2d",
+        blueGray: "#64748B",
+        blue: "#3B82F6",
         light: "#5f6368ff",
         "indigo-shade": "#4B0082",
       },
