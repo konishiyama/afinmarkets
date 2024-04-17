@@ -49,12 +49,12 @@ const Header: NextPage<HeaderProps> = ({ header_props, lang }) => {
         backgroundColor: `rgba(${headerBackground})`,
       }}
     >
-      <div className="px-4 mx-auto max-w-full xl:max-w-screen-xl">
+      <div className="px-4 mx-auto xl:max-w-screen-xl">
         <nav
           className="flex justify-between items-center py-6"
           aria-label="Global"
         >
-          <div className="lg:flex lg:flex-1">
+          <div className="lg:flex">
             <Link
               href={`/${lang}`}
               className="text-sm text-base font-semibold leading-6 "
@@ -74,7 +74,7 @@ const Header: NextPage<HeaderProps> = ({ header_props, lang }) => {
               <HeaderMenu name={header_props.JoinUs} />
             </ul>
           </div>
-          <div className="flex lg:flex-1  lg:justify-end lg:pt-2">
+          <div className="flex lg\:block lg:pt-2">
             <LocaleSwitcher lang={lang} />
           </div>
         </nav>
