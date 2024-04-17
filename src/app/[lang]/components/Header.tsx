@@ -8,6 +8,7 @@ import { type Locale } from "../../../i18n-config";
 import LocaleSwitcher from "./LocaleSwitcher";
 import logo from "/public/images/20240414_logo.png";
 import HeaderMenu from "./HeaderMenu";
+import Layout from "./Layout";
 
 interface Dictionary {
   Product: string;
@@ -44,12 +45,12 @@ const Header: NextPage<HeaderProps> = ({ header_props, lang }) => {
 
   return (
     <header
-      className="sticky top-0"
+      className="sticky top-0 z-10"
       style={{
         backgroundColor: `rgba(${headerBackground})`,
       }}
     >
-      <div className="px-4 mx-auto xl:max-w-screen-xl">
+      <Layout>
         <nav
           className="flex justify-between items-center py-6"
           aria-label="Global"
@@ -59,11 +60,7 @@ const Header: NextPage<HeaderProps> = ({ header_props, lang }) => {
               href={`/${lang}`}
               className="text-sm text-base font-semibold leading-6 "
             >
-              <Image
-                src={logo} // Route of the image file
-                alt="Afin Tech Logo"
-                className="w-56"
-              />
+              <Image src={logo} alt="Afin Tech Logo" className="w-56" />
             </Link>
           </div>
           <div className="lg:flex lg:pt-2">
@@ -78,7 +75,7 @@ const Header: NextPage<HeaderProps> = ({ header_props, lang }) => {
             <LocaleSwitcher lang={lang} />
           </div>
         </nav>
-      </div>
+      </Layout>
     </header>
   );
 };

@@ -4,5 +4,11 @@
     "Features": "特点",
     "Team": "亚金团队",
     "JoinUs": "加入我们"
+  },
+  "cover_props": {
+    "Product": "概要",
+    "Features": "特徴",
+    "Team": "チーム",
+    "JoinUs": "コンタクト"
   }
 }

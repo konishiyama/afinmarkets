@@ -4,5 +4,11 @@
     "Features": "특징",
     "Team": "팀 소개",
     "JoinUs": "등록"
+  },
+  "cover_props": {
+    "Product": "概要",
+    "Features": "特徴",
+    "Team": "チーム",
+    "JoinUs": "コンタクト"
   }
 }

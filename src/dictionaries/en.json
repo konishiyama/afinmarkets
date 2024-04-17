@@ -4,5 +4,11 @@
     "Features": "Features",
     "Team": "Team",
     "JoinUs": "Join Us"
+  },
+  "cover_props": {
+    "Product": "概要",
+    "Features": "特徴",
+    "Team": "チーム",
+    "JoinUs": "コンタクト"
   }
 }
