@@ -6,7 +6,6 @@ import { i18n, type Locale } from "../../../i18n-config";
 import { Fragment, useEffect, useRef, useState } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon, GlobeAltIcon } from "@heroicons/react/24/outline";
-import ReactCountryFlag from "react-country-flag";
 import LocalSwitcherMenu from "./LocalSwitcherMenu";
 
 interface HeaderProps {
@@ -14,14 +13,6 @@ interface HeaderProps {
 }
 
 const LocaleSwitcher: NextPage<HeaderProps> = ({ lang }) => {
-  const pathName = usePathname();
-  const redirectedPathName = (locale: string) => {
-    if (!pathName) return "/";
-    const segments = pathName.split("/");
-    segments[1] = locale;
-    return segments.join("/");
-  };
-
   return (
     <>
       <Menu as="div" className="relative inline-block text-left">
@@ -43,10 +34,7 @@ const LocaleSwitcher: NextPage<HeaderProps> = ({ lang }) => {
         >
           <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none">
             <div className="px-1 py-1 ">
-              <LocalSwitcherMenu lang="en" />
-              <LocalSwitcherMenu lang="ja" />
-              <LocalSwitcherMenu lang="ko" />
-              <LocalSwitcherMenu lang="zh" />
+              <LocalSwitcherMenu lang={lang} />
             </div>
           </Menu.Items>
         </Transition>
