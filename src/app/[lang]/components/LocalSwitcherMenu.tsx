@@ -1,5 +1,4 @@
 import { usePathname } from "next/navigation";
-import { NextPage } from "next";
 import { i18n, type Locale } from "../../../i18n-config";
 import Link from "next/link";
 import { Menu } from "@headlessui/react";
@@ -8,7 +7,7 @@ interface HeaderProps {
   lang: Locale;
 }
 
-const LocalSwitcherMenu: NextPage<HeaderProps> = ({ lang }) => {
+const LocalSwitcherMenu = ({ lang }: HeaderProps) => {
   const pathName = usePathname();
   const languageMapping: Record<string, string> = {
     en: "English",
