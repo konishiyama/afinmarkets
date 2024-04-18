@@ -5,6 +5,7 @@ import Image from "next/image";
 import { type Locale } from "../../../i18n-config";
 import Layout from "./Layout";
 import SectionContainer from "./SectionContainer";
+import ScrollOffset from "./common/ScrollOffset";
 import productBgImage from "/public/images/pattern.png";
 import chartImage from "/public/images/dashboard.png";
 
@@ -24,6 +25,7 @@ const Product = ({ product_props, lang }: ProductProps) => {
   return (
     <Layout>
       <SectionContainer>
+        <ScrollOffset id="Product" />
         <div id="Product" className="max-w-lg mx-auto mb-20 text-center">
           <span className="inline-block text-xs py-1 px-3 text-white font-semibold bg-blue rounded-xl wow animate__animated animate__fadeIn">
             How we work

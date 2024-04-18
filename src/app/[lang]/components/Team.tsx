@@ -5,6 +5,7 @@ import Image from "next/image";
 import { type Locale } from "../../../i18n-config";
 import Layout from "./Layout";
 import SectionContainer from "./SectionContainer";
+import ScrollOffset from "./common/ScrollOffset";
 import profImage from "/public/images/konishiyama.jpg";
 
 interface Dictionary {
@@ -23,7 +24,8 @@ const Team = ({ team_props, lang }: TeamProps) => {
   return (
     <Layout>
       <SectionContainer>
-        <div id="Team" className="max-w-lg mx-auto mb-12 text-center">
+        <ScrollOffset id="Team" />
+        <div className="max-w-lg mx-auto mb-12 text-center">
           <span
             className="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl wow animate__animated animate__fadeIn"
             data-wow-delay=".3s"

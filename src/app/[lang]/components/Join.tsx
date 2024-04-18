@@ -5,6 +5,7 @@ import Image from "next/image";
 import { type Locale } from "../../../i18n-config";
 import Layout from "./Layout";
 import SectionContainer from "./SectionContainer";
+import ScrollOffset from "./common/ScrollOffset";
 import bgImage from "/public/images/blob.svg";
 
 interface Dictionary {
@@ -22,8 +23,8 @@ interface JoinProps {
 const Join = ({ join_props, lang }: JoinProps) => {
   return (
     <Layout>
+      <ScrollOffset id="JoinUs" />
       <div
-        id="JoinUs"
         className="py-20 bg-top bg-no-repeat"
         style={{
           backgroundImage: `url(${bgImage.src})`,
