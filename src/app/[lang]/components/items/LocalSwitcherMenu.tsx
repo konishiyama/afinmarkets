@@ -1,5 +1,5 @@
 import { usePathname } from "next/navigation";
-import { i18n, type Locale } from "../../../i18n-config";
+import { i18n, type Locale } from "../../../../i18n-config";
 import Link from "next/link";
 import { Menu } from "@headlessui/react";
 

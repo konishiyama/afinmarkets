@@ -4,10 +4,10 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { type Locale } from "../../../i18n-config";
-import LocaleSwitcher from "./LocaleSwitcher";
+import LocaleSwitcher from "./items/LocaleSwitcher";
 import logo from "/public/images/20240414_logo.png";
-import HeaderMenu from "./HeaderMenu";
-import Layout from "./Layout";
+import HeaderMenu from "./items/HeaderMenu";
+import Layout from "./layouts/Layout";
 
 interface Dictionary {
   Product: string;

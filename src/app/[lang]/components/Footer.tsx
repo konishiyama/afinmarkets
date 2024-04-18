@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { type Locale } from "../../../i18n-config";
 import logo from "/public/images/20240414_logo.png";
-import Layout from "./Layout";
+import Layout from "./layouts/Layout";
 
 interface Dictionary {
   Product: string;

@@ -3,8 +3,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { type Locale } from "../../../i18n-config";
-import Layout from "./Layout";
-import SectionContainer from "./SectionContainer";
+import Layout from "./layouts/Layout";
+import SectionContainer from "./layouts/SectionContainer";
 import ScrollOffset from "./common/ScrollOffset";
 import profImage from "/public/images/konishiyama.jpg";
 

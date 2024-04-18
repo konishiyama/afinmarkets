@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { i18n, type Locale } from "../../../i18n-config";
+import { i18n, type Locale } from "../../../../i18n-config";
 import { Fragment, useEffect, useRef, useState } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon, GlobeAltIcon } from "@heroicons/react/24/outline";
