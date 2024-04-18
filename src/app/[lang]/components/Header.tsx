@@ -64,12 +64,7 @@ const Header: NextPage<HeaderProps> = ({ header_props, lang }) => {
             </Link>
           </div>
           <div className="lg:flex lg:pt-2">
-            <ul className="lg:flex lg:items-center lg:w-auto lg:space-x-20">
-              <HeaderMenu name={header_props.Product} />
-              <HeaderMenu name={header_props.Features} />
-              <HeaderMenu name={header_props.Team} />
-              <HeaderMenu name={header_props.JoinUs} />
-            </ul>
+            <HeaderMenu header_props={header_props} />
           </div>
           <div className="flex lg\:block lg:pt-2">
             <LocaleSwitcher lang={lang} />

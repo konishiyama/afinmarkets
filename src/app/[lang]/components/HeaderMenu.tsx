@@ -1,19 +1,30 @@
 import Link from "next/link";
 
-interface Props {
-  name: string;
+interface Dictionary {
+  Product: string;
+  Features: string;
+  Team: string;
+  JoinUs: string;
 }
 
-const HeaderMenu = ({ name }: Props) => {
+interface HeaderProps {
+  header_props: Dictionary;
+}
+
+const HeaderMenu = ({ header_props }: HeaderProps) => {
   return (
-    <li className="px-4">
-      <Link
-        href={`#${name}`}
-        className="font-semibold text-blueGray-600 hover:text-blueGray-500"
-      >
-        {name}
-      </Link>
-    </li>
+    <ul className="lg:flex lg:items-center lg:w-auto lg:space-x-20">
+      {Object.entries(header_props).map(([propId, propName]) => (
+        <li key={propId} className="px-4">
+          <Link
+            href={`#${propId}`}
+            className="font-semibold text-blueGray-600 hover:text-blueGray-500"
+          >
+            {propName}
+          </Link>
+        </li>
+      ))}
+    </ul>
   );
 };
 
