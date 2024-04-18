@@ -3,6 +3,7 @@ import { Locale } from "../../i18n-config";
 import Header from "./components/Header";
 import Cover from "./components/Cover";
 import Product from "./components/Product";
+import Team from "./components/Team";
 import Join from "./components/Join";
 import Footer from "./components/Footer";
 
@@ -18,6 +19,7 @@ export default async function IndexPage({
       <Header header_props={dictionary.header_props} lang={lang} />
       <Cover cover_props={dictionary.cover_props} lang={lang} />
       <Product product_props={dictionary.product_props} lang={lang} />
+      <Team team_props={dictionary.team_props} lang={lang} />
       <Join join_props={dictionary.join_props} lang={lang} />
       <Footer footer_props={dictionary.header_props} lang={lang} />
     </main>
