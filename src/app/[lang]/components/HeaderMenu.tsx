@@ -9,7 +9,7 @@ const HeaderMenu = ({ name }: Props) => {
     <li className="px-4">
       <Link
         href={`#${name}`}
-        className="font-semibold text-base hover:text-blueGray"
+        className="font-semibold text-blueGray-600 hover:text-blueGray-500"
       >
         {name}
       </Link>

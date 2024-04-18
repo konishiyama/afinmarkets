@@ -23,14 +23,14 @@ module.exports = {
       },
       colors: {
         base: "#222d2d",
-        blueGray: "#64748B",
-        blue: "#3B82F6",
-        light: "#5f6368ff",
-        "indigo-shade": "#4B0082",
-      },
-      placeholderColor: {
-        base: "#5f6368ff",
-        red: "#EF4444",
+        blueGray: {
+          100: "#F1F5F9",
+          200: "#E2E8F0",
+          300: "#CBD5E1",
+          400: "#94A3B8",
+          500: "#64748B",
+          600: "#475569",
+        },
       },
     },
   },
