@@ -3,11 +3,11 @@ import { usePathname } from "next/navigation";
 import { NextPage } from "next";
 import Link from "next/link";
 import { i18n, type Locale } from "../../../i18n-config";
-
 import { Fragment, useEffect, useRef, useState } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon, GlobeAltIcon } from "@heroicons/react/24/outline";
 import ReactCountryFlag from "react-country-flag";
+import LocalSwitcherMenu from "./LocalSwitcherMenu";
 
 interface HeaderProps {
   lang: Locale;
@@ -22,13 +22,10 @@ const LocaleSwitcher: NextPage<HeaderProps> = ({ lang }) => {
     return segments.join("/");
   };
 
-  const destination = lang === "ko" ? "ja" : "ko";
-  const countryCode = lang === "ko" ? "JP" : "KR";
-
   return (
     <>
       <Menu as="div" className="relative inline-block text-left">
-        <Menu.Button className="items-center font-semibold text-base inline-flex w-full justify-center px-4 py-2 hover:text-blueGray">
+        <Menu.Button className="items-center font-semibold text-blueGray-600 inline-flex w-full justify-center px-4 py-2 hover:text-blueGray-500">
           <GlobeAltIcon className="h-5 w-5 text-base" aria-hidden="true" />
           <ChevronDownIcon
             className="ml-1 h-5 w-5 text-base"
@@ -46,54 +43,10 @@ const LocaleSwitcher: NextPage<HeaderProps> = ({ lang }) => {
         >
           <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none">
             <div className="px-1 py-1 ">
-              <Menu.Item>
-                {({ active }) => (
-                  <Link
-                    href={redirectedPathName("en")}
-                    className={`${
-                      active ? "bg-blue text-white" : "text-gray-900"
-                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                  >
-                    English
-                  </Link>
-                )}
-              </Menu.Item>
-              <Menu.Item>
-                {({ active }) => (
-                  <Link
-                    href={redirectedPathName("ja")}
-                    className={`${
-                      active ? "bg-blue text-white" : "text-gray-900"
-                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                  >
-                    日本語
-                  </Link>
-                )}
-              </Menu.Item>
-              <Menu.Item>
-                {({ active }) => (
-                  <Link
-                    href={redirectedPathName("ko")}
-                    className={`${
-                      active ? "bg-blue text-white" : "text-gray-900"
-                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                  >
-                    한국어
-                  </Link>
-                )}
-              </Menu.Item>
-              <Menu.Item>
-                {({ active }) => (
-                  <Link
-                    href={redirectedPathName("zh")}
-                    className={`${
-                      active ? "bg-blue text-white" : "text-gray-900"
-                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                  >
-                    中文
-                  </Link>
-                )}
-              </Menu.Item>
+              <LocalSwitcherMenu lang="en" />
+              <LocalSwitcherMenu lang="ja" />
+              <LocalSwitcherMenu lang="ko" />
+              <LocalSwitcherMenu lang="zh" />
             </div>
           </Menu.Items>
         </Transition>
