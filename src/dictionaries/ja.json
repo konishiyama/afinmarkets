@@ -22,5 +22,11 @@
     "Features": "特徴",
     "Team": "チーム",
     "JoinUs": "コンタクト"
+  },
+  "footer_props": {
+    "Product": "概要",
+    "Features": "特徴",
+    "Team": "チーム",
+    "JoinUs": "コンタクト"
   }
 }

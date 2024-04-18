@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Cover from "./components/Cover";
 import Product from "./components/Product";
 import Join from "./components/Join";
+import Footer from "./components/Footer";
 
 export default async function IndexPage({
   params: { lang },
@@ -18,6 +19,7 @@ export default async function IndexPage({
       <Cover cover_props={dictionary.cover_props} lang={lang} />
       <Product product_props={dictionary.product_props} lang={lang} />
       <Join join_props={dictionary.join_props} lang={lang} />
+      <Footer footer_props={dictionary.header_props} lang={lang} />
     </main>
   );
 }
