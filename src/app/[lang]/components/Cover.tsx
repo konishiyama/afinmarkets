@@ -24,7 +24,7 @@ interface CoverProps {
 const Cover: NextPage<CoverProps> = ({ cover_props, lang }) => {
   return (
     <Layout>
-      <SectionContainer>
+      <div className="flex flex-wrap items-center -mx-3 xl:px-16">
         <div className="w-full lg:w-1/2 px-3">
           <div className="max-w-lg lg:max-w-md mx-auto lg:mx-0 mb-8 text-center lg:text-left">
             <h2 className="text-3xl lg:text-5xl mb-4 font-bold font-heading wow animate__animated animate__fadeIn">
@@ -65,7 +65,7 @@ const Cover: NextPage<CoverProps> = ({ cover_props, lang }) => {
             />
           </div>
         </div>
-      </SectionContainer>
+      </div>
     </Layout>
   );
 };
