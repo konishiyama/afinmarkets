@@ -1,6 +1,5 @@
 "use client";
 
-import { NextPage } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { type Locale } from "../../../i18n-config";
@@ -21,11 +20,11 @@ interface ProductProps {
   lang: Locale;
 }
 
-const Product: NextPage<ProductProps> = ({ product_props, lang }) => {
+const Product = ({ product_props, lang }: ProductProps) => {
   return (
     <Layout>
       <SectionContainer>
-        <div className="max-w-lg mx-auto mb-20 text-center">
+        <div id="Product" className="max-w-lg mx-auto mb-20 text-center">
           <span className="inline-block text-xs py-1 px-3 text-white font-semibold bg-blue rounded-xl wow animate__animated animate__fadeIn">
             How we work
           </span>

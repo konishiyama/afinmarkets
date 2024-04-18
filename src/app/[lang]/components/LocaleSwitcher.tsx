@@ -1,6 +1,5 @@
 "use client";
-import { usePathname } from "next/navigation";
-import { NextPage } from "next";
+
 import Link from "next/link";
 import { i18n, type Locale } from "../../../i18n-config";
 import { Fragment, useEffect, useRef, useState } from "react";
@@ -12,7 +11,7 @@ interface HeaderProps {
   lang: Locale;
 }
 
-const LocaleSwitcher: NextPage<HeaderProps> = ({ lang }) => {
+const LocaleSwitcher = ({ lang }: HeaderProps) => {
   return (
     <>
       <Menu as="div" className="relative inline-block text-left">

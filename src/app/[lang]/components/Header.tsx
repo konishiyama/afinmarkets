@@ -1,6 +1,5 @@
 "use client";
 
-import { NextPage } from "next";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -22,7 +21,7 @@ interface HeaderProps {
   lang: Locale;
 }
 
-const Header: NextPage<HeaderProps> = ({ header_props, lang }) => {
+const Header = ({ header_props, lang }: HeaderProps) => {
   const [clientWindowHeight, setClientWindowHeight] = useState<number>(0);
   const [headerBackground, setHeaderBackground] = useState("0, 0, 0, 0");
 
@@ -63,7 +62,7 @@ const Header: NextPage<HeaderProps> = ({ header_props, lang }) => {
               <Image src={logo} alt="Afin Tech Logo" className="w-56" />
             </Link>
           </div>
-          <div className="lg:flex lg:pt-2">
+          <div className="hidden lg:flex lg:pt-2">
             <HeaderMenu header_props={header_props} />
           </div>
           <div className="flex lg\:block lg:pt-2">

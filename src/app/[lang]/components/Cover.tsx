@@ -1,6 +1,5 @@
 "use client";
 
-import { NextPage } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { type Locale } from "../../../i18n-config";
@@ -21,7 +20,7 @@ interface CoverProps {
   lang: Locale;
 }
 
-const Cover: NextPage<CoverProps> = ({ cover_props, lang }) => {
+const Cover = ({ cover_props, lang }: CoverProps) => {
   return (
     <Layout>
       <div className="flex flex-wrap items-center -mx-3 xl:px-16">
