@@ -24,12 +24,19 @@ interface ProductProps {
 const Product = ({ product_props, lang }: ProductProps) => {
   return (
     <Layout>
-      <SectionContainer>
+      <div className="flex-wrap items-center xl:px-16 py-12 md:pb-12">
         <ScrollOffset id="Product" />
-        <div id="Product" className="max-w-lg mx-auto mb-20 text-center">
-          <span className="inline-block text-xs py-1 px-3 text-white font-semibold bg-blue rounded-xl wow animate__animated animate__fadeIn">
-            How we work
-          </span>
+        <div className="max-w-lg mx-auto mb-12 text-center">
+          <div className="max-w-lg mx-auto text-center">
+            <span
+              className="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl wow animate__animated animate__fadeIn"
+              data-wow-delay=".3s"
+            >
+              Product
+            </span>
+          </div>
+        </div>
+        <div className="max-w-lg mx-auto mb-12 text-center">
           <h2 className="my-3 text-3xl md:text-4xl text-blueGray font-bold font-heading wow animate__animated animate__fadeIn">
             Partner Company Business And Me Success Fully
           </h2>
@@ -55,7 +62,7 @@ const Product = ({ product_props, lang }: ProductProps) => {
             />
           </div>
         </div>
-      </SectionContainer>
+      </div>
     </Layout>
   );
 };

@@ -23,7 +23,7 @@ interface CoverProps {
 const Cover = ({ cover_props, lang }: CoverProps) => {
   return (
     <Layout>
-      <div className="flex flex-wrap items-center -mx-3 xl:px-16">
+      <div className="flex flex-wrap items-center -mx-3 xl:px-16 pt-8 md:pt-16 lg:pt-0">
         <div className="w-full lg:w-1/2 px-3">
           <div className="max-w-lg lg:max-w-md mx-auto lg:mx-0 mb-8 text-center lg:text-left">
             <h2 className="text-3xl lg:text-5xl mb-4 font-bold font-heading wow animate__animated animate__fadeIn">
@@ -43,16 +43,16 @@ const Cover = ({ cover_props, lang }: CoverProps) => {
           <div className="text-center lg:text-left">
             <Link
               className="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-500 hover:bg-blue-700 rounded wow animate__animated animate__fadeIn"
-              href="#key-features"
+              href="#Features"
             >
               Key Features
             </Link>
             <Link
               className="block sm:inline-block hover-up-2 py-4 px-8 text-xs text-blueGray-500 hover:text-blueGray-600 text-center font-semibold leading-none bg-white border border-blueGray-200 hover:border-blueGray-300 rounded wow animate__animated animate__fadeIn"
               data-wow-delay=".3s"
-              href="#how-we-work"
+              href="#Team"
             >
-              How We Work?
+              Who We Are?
             </Link>
           </div>
         </div>

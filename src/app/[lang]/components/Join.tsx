@@ -30,7 +30,7 @@ const Join = ({ join_props, lang }: JoinProps) => {
           backgroundImage: `url(${bgImage.src})`,
         }}
       >
-        <div className="relative py-20 px-4 lg:p-20">
+        <div className="relative lg:px-16 py-12">
           <div className="max-w-lg mx-auto text-center">
             <h2 className="mb-4 text-3xl lg:text-4xl font-bold font-heading wow animate__animated animate__fadeIn">
               <span className="">Subscribe now to </span>
@@ -41,6 +41,7 @@ const Join = ({ join_props, lang }: JoinProps) => {
               All your information is completely confidential
             </p>
             <div className="p-4 bg-white rounded-lg flex flex-wrap max-w-md mx-auto wow animate__animated animate__fadeIn">
+              {/* <div className="p-4 bg-white rounded-lg flex flex-wrap max-w-md mx-auto wow animate__animated animate__fadeIn"> */}
               <div className="flex w-full md:w-2/3 px-3 mb-3 md:mb-0 md:mr-6 bg-blueGray-100 rounded">
                 <svg
                   className="h-6 w-6 my-auto text-blueGray-500"
