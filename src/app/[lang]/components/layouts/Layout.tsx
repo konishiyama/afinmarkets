@@ -5,5 +5,7 @@ export default function Layout({
 }: {
   children: React.ReactNode;
 }) {
-  return <div className="px-4 mx-auto xl:max-w-screen-xl">{children}</div>;
+  return (
+    <div className="px-4 mx-auto xl:max-w-screen-xl bg-white">{children}</div>
+  );
 }

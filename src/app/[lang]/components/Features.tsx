@@ -24,7 +24,7 @@ interface FeaturesProps {
 const Features = ({ features_props, lang }: FeaturesProps) => {
   return (
     <div className="bg-blueGray-50">
-      <Layout>
+      <div className="px-4 mx-auto xl:max-w-screen-xl">
         <SectionContainer>
           <ScrollOffset id="Features" />
           <div className="max-w-lg mx-auto mb-12 text-center">
@@ -122,7 +122,7 @@ const Features = ({ features_props, lang }: FeaturesProps) => {
             </div>
           </div>
         </SectionContainer>
-      </Layout>
+      </div>
     </div>
   );
 };
