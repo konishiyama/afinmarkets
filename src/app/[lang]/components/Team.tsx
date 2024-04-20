@@ -7,16 +7,29 @@ import Layout from "./layouts/Layout";
 import SectionContainer from "./layouts/SectionContainer";
 import ScrollOffset from "./common/ScrollOffset";
 import profImage from "/public/images/konishiyama.jpg";
+import TeamMembers from "./items/TeamMembers";
 
-interface Dictionary {
-  Product: string;
-  Features: string;
-  Team: string;
-  JoinUs: string;
+interface Member {
+  fullname: string;
+  title: string;
+  description: string;
+  img_path: string;
+}
+
+interface Members {
+  Ko: Member;
+  Heebin: Member;
+  Woojin: Member;
+  Yuho: Member;
 }
 
 interface TeamProps {
-  team_props: Dictionary;
+  team_props: {
+    Product: string;
+    Features: string;
+    Members: Members;
+    JoinUs: string;
+  };
   lang: Locale;
 }
 
@@ -50,100 +63,7 @@ const Team = ({ team_props, lang }: TeamProps) => {
             eget justo et iaculis.
           </p>
         </div>
-        <div className="flex flex-wrap">
-          <div
-            className="w-full md:w-1/2 py-5 md:px-5 wow animate__animated animate__fadeIn"
-            data-wow-delay=".1s"
-          >
-            <div className="px-6 py-10 bg-white shadow rounded">
-              <div className="flex items-center mb-4">
-                <Image
-                  className="h-16 w-16 rounded-full object-cover"
-                  src={profImage}
-                  alt="Monst"
-                />
-                <div className="pl-4">
-                  <p className="text-lg font-bold">Michael Jackson</p>
-                  <p className="text-blue-600">CEO</p>
-                </div>
-              </div>
-              <p className="leading-loose text-blueGray-400 mb-5 text-sm">
-                Donec consequat tortor risus, at auctor felis consequat a. Donec
-                quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar.
-                Vestibulum non quam velit.
-              </p>
-            </div>
-          </div>
-          <div
-            className="w-full md:w-1/2 py-5 md:px-5 wow animate__animated animate__fadeIn"
-            data-wow-delay=".3s"
-          >
-            <div className="px-6 py-10 bg-white shadow rounded">
-              <div className="flex items-center mb-4">
-                <Image
-                  className="h-16 w-16 rounded-full object-cover"
-                  src={profImage}
-                  alt="Monst"
-                />
-                <div className="pl-4">
-                  <p className="text-lg font-bold">Oprah Winfrey</p>
-                  <p className="text-blue-600 text-sm">Head of Development</p>
-                </div>
-              </div>
-              <p className="leading-loose text-blueGray-400 mb-5 text-sm">
-                Donec consequat tortor risus, at auctor felis consequat a. Donec
-                quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar.
-                Vestibulum non quam velit.
-              </p>
-            </div>
-          </div>
-          <div
-            className="w-full md:w-1/2 py-5 md:px-5 wow animate__animated animate__fadeIn"
-            data-wow-delay=".5s"
-          >
-            <div className="px-6 py-10 bg-white shadow rounded">
-              <div className="flex items-center mb-4">
-                <Image
-                  className="h-16 w-16 rounded-full object-cover"
-                  src={profImage}
-                  alt="Monst"
-                />
-                <div className="pl-4">
-                  <p className="text-lg font-bold">Leonardo</p>
-                  <p className="text-blue-600 text-sm">Head of Operations</p>
-                </div>
-              </div>
-              <p className="leading-loose text-blueGray-400 mb-5 text-sm">
-                Donec consequat tortor risus, at auctor felis consequat a. Donec
-                quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar.
-                Vestibulum non quam velit.
-              </p>
-            </div>
-          </div>
-          <div
-            className="w-full md:w-1/2 py-5 md:px-5 wow animate__animated animate__fadeIn"
-            data-wow-delay=".7s"
-          >
-            <div className="px-6 py-10 bg-white shadow rounded">
-              <div className="flex items-center mb-4">
-                <Image
-                  className="h-16 w-16 rounded-full object-cover"
-                  src={profImage}
-                  alt="Monst"
-                />
-                <div className="pl-4">
-                  <p className="text-lg font-bold">Jerry Seinfeld</p>
-                  <p className="text-blue-600 text-sm">Head of Development</p>
-                </div>
-              </div>
-              <p className="leading-loose text-blueGray-400 mb-5 text-sm">
-                Donec consequat tortor risus, at auctor felis consequat a. Donec
-                quis dolor sem. Sed sollicitudin magna in hendrerit pulvinar.
-                Vestibulum non quam velit.
-              </p>
-            </div>
-          </div>
-        </div>
+        <TeamMembers team_members_props={team_props.Members} />
       </SectionContainer>
     </Layout>
   );

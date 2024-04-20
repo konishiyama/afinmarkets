@@ -26,7 +26,32 @@
   "team_props": {
     "Product": "概要",
     "Features": "特徴",
-    "Team": "チーム",
+    "Members": {
+      "Ko": {
+        "fullname": "Ko",
+        "title": "CEO",
+        "description": "hello this is a test description.hello this is a test description.hello this is a test description.hello this is a test description.hello this is a test description.hello this is a test description.",
+        "img_path": "/public/images/konishiyama.jpg"
+      },
+      "Heebin": {
+        "fullname": "Heebin",
+        "title": "CTO",
+        "description": "hello this is a test description.hello this is a test description.hello this is a test description.hello this is a test description.hello this is a test description.hello this is a test description.",
+        "img_path": "/public/images/konishiyama.jpg"
+      },
+      "Woojin": {
+        "fullname": "Woojin",
+        "title": "Chief Blockchain Officer",
+        "description": "hello this is a test description.hello this is a test description.hello this is a test description.hello this is a test description.hello this is a test description.hello this is a test description.",
+        "img_path": "/public/images/konishiyama.jpg"
+      },
+      "Yuho": {
+        "fullname": "Yuho",
+        "title": "Chief Economist",
+        "description": "hello this is a test description.hello this is a test description.hello this is a test description.hello this is a test description.hello this is a test description.hello this is a test description.",
+        "img_path": "/public/images/konishiyama.jpg"
+      }
+    },
     "JoinUs": "コンタクト"
   },
   "join_props": {
