@@ -26,8 +26,6 @@ const MemberItem = ({ member_prop }: MemberProps) => {
             className="h-16 w-16 rounded-full object-cover"
             src={image}
             alt="Monst"
-            width={100}
-            height={100}
           />
           <div className="pl-4">
             <p className="text-lg font-bold">{member_prop.fullname}</p>
