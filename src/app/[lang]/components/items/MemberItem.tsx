@@ -14,6 +14,7 @@ interface MemberProps {
 }
 
 const MemberItem = ({ member_prop }: MemberProps) => {
+  // Member image dynamic path: https://velog.io/@cobocho/Next.js-Image-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%8F%99%EC%A0%81-%EB%A1%9C%EC%BB%AC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%95%B4%EA%B2%B0%EA%B8%B0
   const image = require(`/public/images/${member_prop.img_path}`).default;
   return (
     <li

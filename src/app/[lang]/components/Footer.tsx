@@ -7,10 +7,9 @@ import logo from "/public/images/20240414_logo.png";
 import Layout from "./layouts/Layout";
 
 interface Dictionary {
-  Product: string;
-  Features: string;
-  Team: string;
-  JoinUs: string;
+  Address: string;
+  Phone: string;
+  Email: string;
 }
 
 interface FooterProps {
@@ -35,39 +34,34 @@ const Footer = ({ footer_props, lang }: FooterProps) => {
                 <Image className="w-56" src={logo} alt="Monst" />
               </Link>
             </div>
-            <div className="w-full lg:w-2/5 px-3 mb-8 lg:mb-0">
-              <p className="max-w-md mx-auto lg:max-w-full lg:mx-0 lg:pr-32 lg:text-lg text-blueGray-400 leading-relaxed">
-                Helping you
-                <strong>maximize</strong>
-                operations management with digitization
-              </p>
+            <div className="hidden lg:flex lg:w-2/5 px-3 mb-8 lg:mb-0">
+              {/* <p className="max-w-md mx-auto lg:max-w-full lg:mx-0 lg:pr-32 lg:text-lg text-blueGray-400 leading-relaxed">
+                {footer_props.Comment}
+              </p> */}
             </div>
             <div className="w-full lg:w-1/5 px-3 mb-8 lg:mb-0">
               <p className="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">
                 Office
               </p>
               <p className="lg:text-lg text-blueGray-400">
-                359 Hidden Valley Road, NY
+                {footer_props.Address}
               </p>
             </div>
             <div className="w-full lg:w-1/5 px-3">
               <p className="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">
                 Contacts
               </p>
-              <p className="lg:text-lg text-blueGray-400">(+01) 234 568</p>
-              <p className="lg:text-lg text-blueGray-400">contact@monst.com</p>
+              <p className="lg:text-lg text-blueGray-400">
+                {footer_props.Phone}
+              </p>
+              <p className="lg:text-lg text-blueGray-400">
+                {footer_props.Email}
+              </p>
             </div>
           </div>
           <div className="flex flex-col lg:flex-row items-center lg:justify-between">
             <p className="text-sm text-blueGray-400">
-              © 2022. All rights reserved. Designed by
-              <Link
-                className="text-blue-400"
-                href="https://alithemes.com"
-                target="_blank"
-              >
-                Alithemes.com
-              </Link>
+              © 2024. Shangri-la Inc. All rights reserved.
             </p>
           </div>
         </div>

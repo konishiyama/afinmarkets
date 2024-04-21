@@ -24,35 +24,34 @@
     "JoinUs": "コンタクト"
   },
   "team_props": {
-    "Product": "概要",
-    "Features": "特徴",
+    "Title": "Our Management Team",
+    "Comment": "Afin Technologiesは、政府機関、テック業界等、関連する全ての経験、ナレッジを持ち合わせたメンバーによって運営されています。",
     "Members": {
       "Ko": {
-        "fullname": "Ko",
+        "fullname": "西山 洸",
         "title": "CEO",
-        "description": "hello this is a test description.hello this is a test description.hello this is a test description.hello this is a test description.hello this is a test description.hello this is a test description.",
-        "img_path": "/public/images/konishiyama.jpg"
+        "description": "慶應義塾大学経済学部卒業後、キャリア官僚として外務省に入省。中国・モンゴル第二課にて対中経済関係業務に従事した後、在中華人民共和国日本国大使館にて勤務。2018年に独立し、韓国・中国・台湾から日本への就職支援事業を展開しつつ、2020年からは機械学習エンジニアとして主に機械翻訳、自然言語処理等の分野に従事。",
+        "img_path": "konishiyama.jpg"
       },
-      "Heebin": {
-        "fullname": "Heebin",
+      "Heein": {
+        "fullname": "Heein",
         "title": "CTO",
-        "description": "hello this is a test description.hello this is a test description.hello this is a test description.hello this is a test description.hello this is a test description.hello this is a test description.",
-        "img_path": "/public/images/konishiyama.jpg"
+        "description": "高校在学時に韓国数学オリンピック金賞、ソウル大学在学時に韓国大学生数学競技大会にて銀賞を受賞。ソウル大学数理科学部を卒業後、韓国の有名ブロックチェーンスタートアップにてエンジニア・クォンタムアナリストとして勤務。幼少時に日本在住経験もあり、日本語が堪能。",
+        "img_path": "konishiyama.jpg"
       },
       "Woojin": {
         "fullname": "Woojin",
         "title": "Chief Blockchain Officer",
-        "description": "hello this is a test description.hello this is a test description.hello this is a test description.hello this is a test description.hello this is a test description.hello this is a test description.",
-        "img_path": "/public/images/konishiyama.jpg"
+        "description": "韓国・漢陽大学を中退後、独学エンジニアとしてのキャリアを開始。ブロックチェーン黎明期には単独で仮想通貨交換所の開発に従事するなど、これまで10年以上にわたり、ブロックチェーン業界にて多種多様な経験を積んだほか、複数のスタートアップにてCTOとしても勤務。",
+        "img_path": "konishiyama.jpg"
       },
-      "Yuho": {
-        "fullname": "Yuho",
+      "Yuto": {
+        "fullname": "Yuto",
         "title": "Chief Economist",
-        "description": "hello this is a test description.hello this is a test description.hello this is a test description.hello this is a test description.hello this is a test description.hello this is a test description.",
-        "img_path": "/public/images/konishiyama.jpg"
+        "description": "東京大学法学部を卒業後、財務省にキャリア官僚として入省。東京財務本省にて4年勤務後、London Business Schoolに留学、経済学修士を取得。また、アジア開発銀行に派遣され、マニラ本部にてエコノミストとして地域経済分析に従事した経験も持つ。",
+        "img_path": "konishiyama.jpg"
       }
-    },
-    "JoinUs": "コンタクト"
+    }
   },
   "join_props": {
     "Product": "概要",
@@ -61,9 +60,8 @@
     "JoinUs": "コンタクト"
   },
   "footer_props": {
-    "Product": "概要",
-    "Features": "特徴",
-    "Team": "チーム",
-    "JoinUs": "コンタクト"
+    "Address": "東京都渋谷区渋谷3丁目5−16",
+    "Phone": "+81 50 5534 1696",
+    "Email": "info@afintech.io"
   }
 }

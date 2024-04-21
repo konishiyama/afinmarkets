@@ -18,17 +18,16 @@ interface Member {
 
 interface Members {
   Ko: Member;
-  Heebin: Member;
+  Heein: Member;
   Woojin: Member;
-  Yuho: Member;
+  Yuto: Member;
 }
 
 interface TeamProps {
   team_props: {
-    Product: string;
-    Features: string;
+    Title: string;
+    Comment: string;
     Members: Members;
-    JoinUs: string;
   };
   lang: Locale;
 }
@@ -53,14 +52,13 @@ const Team = ({ team_props, lang }: TeamProps) => {
             className="text-3xl md:text-4xl mt-2 mb-4 font-bold font-heading wow animate__animated animate__fadeIn"
             data-wow-delay=".3s"
           >
-            Meet our awesome team
+            {team_props.Title}
           </h2>
           <p
             className="text-blueGray-400 leading-loose wow animate__animated animate__fadeIn"
             data-wow-delay=".3s"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus
-            eget justo et iaculis.
+            {team_props.Comment}
           </p>
         </div>
         <TeamMembers team_members_props={team_props.Members} />
