@@ -54,10 +54,12 @@
     }
   },
   "join_props": {
-    "Product": "概要",
-    "Features": "特徴",
-    "Team": "チーム",
-    "JoinUs": "コンタクト"
+    "Title1": "Afin Technologiesサービス開始 ",
+    "TitleBlue": "ウェイティングリスト ",
+    "Title2": "登録",
+    "Comment": "サービスの正式な開始時期や、重要なお知らせについて、ご登録のメールアドレスにご案内いたします。※サービスに関するお問い合わせ等はinfo@afintech.ioにご連絡ください。",
+    "Placeholder": "Emailアドレス",
+    "Button": "登録する"
   },
   "footer_props": {
     "Address": "東京都渋谷区渋谷3丁目5−16",

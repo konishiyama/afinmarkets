@@ -42,7 +42,7 @@
       "Woojin": {
         "fullname": "Woojin",
         "title": "Chief Blockchain Officer",
-        "description": "Blockchain specialist with more than 10 years of professional experiences in the arena. After dropping out from the faculty of phisics at Hanyang University in Seoul, South Korea, Woosin has started his professional career as a tech specialist with 3 times of ecperiences as CTO in several startups including 2 well known blockchain startups in South Korea.",
+        "description": "Blockchain specialist with more than 10 years of professional experiences in the arena. After dropping out from the faculty of phisics at Hanyang University in Seoul, South Korea, Woojin has started his professional career as a tech specialist with 3 times of ecperiences as CTO in several startups including 2 well known blockchain startups in South Korea.",
         "img_path": "konishiyama.jpg"
       },
       "Yuto": {
@@ -54,10 +54,12 @@
     }
   },
   "join_props": {
-    "Product": "概要",
-    "Features": "特徴",
-    "Team": "チーム",
-    "JoinUs": "コンタクト"
+    "Title1": "Sign up for our ",
+    "TitleBlue": "Waiting list ",
+    "Title2": "to get the notice at our launch!",
+    "Comment": "You will immediately informed at the official launch of our service and our important notices! *You can reach out to us by sending message to info@afintech.io for any inquiries.",
+    "Placeholder": "Type Your Email",
+    "Button": "Sign Up"
   },
   "footer_props": {
     "Address": "3-5-16, Shibuya, Shibuya-ward, Tokyo, Japan",
