@@ -25,7 +25,7 @@
   },
   "team_props": {
     "Title": "Our Management Team",
-    "Comment": "All the team members are fully experienced in the govermental field and technology industries, with a strong academic background and knowledges.",
+    "Comment": "All the team members are fully experienced in the govermental field and technology industries.",
     "Members": {
       "Ko": {
         "fullname": "Ko",
@@ -36,7 +36,7 @@
       "Heein": {
         "fullname": "Heein",
         "title": "CTO",
-        "description": "With a strong background in mathmatics, Heein has awarded Gold medal at Korean Mathmatical Olympiad and Silver medal at the Korean Mathmatical Competition respectively when he was in high school and in collage. After graduating the department of mathematical sciences at Seoul National University, Heein joined korean blockchain startup and as an blockchain engineer and a quantum analyst.",
+        "description": "With a strong background in mathmatics, Heein has awarded with a gold medal at Korean Mathmatical Olympiad and a silver medal at the Korean Mathmatical Competition respectively when he was in high school and in collage. After graduating the department of mathematical sciences at Seoul National University, Heein joined korean blockchain startup as a blockchain engineer and a quantum analyst.",
         "img_path": "konishiyama.jpg"
       },
       "Woojin": {
@@ -57,7 +57,7 @@
     "Title1": "Sign up for our ",
     "TitleBlue": "Waiting list ",
     "Title2": "to get the notice at our launch!",
-    "Comment": "You will immediately informed at the official launch of our service and our important notices! *You can reach out to us by sending message to info@afintech.io for any inquiries.",
+    "Comment": "You will be informed the official launch of our service and important notices! *You can also reach out to us by sending message to info@afintech.io for any inquiries.",
     "Placeholder": "Type Your Email",
     "Button": "Sign Up"
   },
