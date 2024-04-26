@@ -1,19 +1,6 @@
 import MemberItem from "./MemberItem";
 import profImage from "/public/images/konishiyama.jpg";
-
-interface Member {
-  fullname: string;
-  title: string;
-  description: string;
-  img_path: string;
-}
-
-interface Members {
-  Ko: Member;
-  Heein: Member;
-  Woojin: Member;
-  Yuto: Member;
-}
+import { Members } from "../common/interfaces";
 
 interface TeamMembersProps {
   team_members_props: Members;

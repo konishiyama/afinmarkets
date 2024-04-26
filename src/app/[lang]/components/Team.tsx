@@ -8,20 +8,7 @@ import SectionContainer from "./layouts/SectionContainer";
 import ScrollOffset from "./common/ScrollOffset";
 import profImage from "/public/images/konishiyama.jpg";
 import TeamMembers from "./items/TeamMembers";
-
-interface Member {
-  fullname: string;
-  title: string;
-  description: string;
-  img_path: string;
-}
-
-interface Members {
-  Ko: Member;
-  Heein: Member;
-  Woojin: Member;
-  Yuto: Member;
-}
+import { Members } from "./common/interfaces";
 
 interface TeamProps {
   team_props: {
