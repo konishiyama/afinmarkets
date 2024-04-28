@@ -1,20 +1,17 @@
 "use client";
 
-import Link from "next/link";
-import Image from "next/image";
 import { type Locale } from "../../../i18n-config";
 import Layout from "./layouts/Layout";
 import SectionContainer from "./layouts/SectionContainer";
 import ScrollOffset from "./common/ScrollOffset";
-import profImage from "/public/images/konishiyama.jpg";
 import TeamMembers from "./items/TeamMembers";
 import { Members } from "./common/interfaces";
 
 interface TeamProps {
   team_props: {
-    Title: string;
-    Comment: string;
-    Members: Members;
+    title: string;
+    comment: string;
+    members: Members;
   };
   lang: Locale;
 }
@@ -39,16 +36,16 @@ const Team = ({ team_props, lang }: TeamProps) => {
             className="text-3xl md:text-4xl mt-2 mb-4 font-bold font-heading wow animate__animated animate__fadeIn"
             data-wow-delay=".3s"
           >
-            {team_props.Title}
+            {team_props.title}
           </h2>
           <p
             className="text-blueGray-400 leading-loose wow animate__animated animate__fadeIn"
             data-wow-delay=".3s"
           >
-            {team_props.Comment}
+            {team_props.comment}
           </p>
         </div>
-        <TeamMembers team_members_props={team_props.Members} />
+        <TeamMembers team_members_props={team_props.members} />
       </SectionContainer>
     </Layout>
   );

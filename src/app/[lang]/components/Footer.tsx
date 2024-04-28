@@ -7,9 +7,9 @@ import logo from "/public/images/20240414_logo.png";
 import Layout from "./layouts/Layout";
 
 interface Dictionary {
-  Address: string;
-  Phone: string;
-  Email: string;
+  address: string;
+  phone: string;
+  email: string;
 }
 
 interface FooterProps {
@@ -34,17 +34,13 @@ const Footer = ({ footer_props, lang }: FooterProps) => {
                 <Image className="w-56" src={logo} alt="Monst" />
               </Link>
             </div>
-            <div className="hidden lg:flex lg:w-2/5 px-3 mb-8 lg:mb-0">
-              {/* <p className="max-w-md mx-auto lg:max-w-full lg:mx-0 lg:pr-32 lg:text-lg text-blueGray-400 leading-relaxed">
-                {footer_props.Comment}
-              </p> */}
-            </div>
+            <div className="hidden lg:flex lg:w-2/5 px-3 mb-8 lg:mb-0"></div>
             <div className="w-full lg:w-1/5 px-3 mb-8 lg:mb-0">
               <p className="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">
                 Office
               </p>
               <p className="lg:text-lg text-blueGray-400">
-                {footer_props.Address}
+                {footer_props.address}
               </p>
             </div>
             <div className="w-full lg:w-1/5 px-3">
@@ -52,10 +48,10 @@ const Footer = ({ footer_props, lang }: FooterProps) => {
                 Contacts
               </p>
               <p className="lg:text-lg text-blueGray-400">
-                {footer_props.Phone}
+                {footer_props.phone}
               </p>
               <p className="lg:text-lg text-blueGray-400">
-                {footer_props.Email}
+                {footer_props.email}
               </p>
             </div>
           </div>

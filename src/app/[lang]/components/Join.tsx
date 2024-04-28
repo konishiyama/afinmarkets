@@ -9,12 +9,12 @@ import ScrollOffset from "./common/ScrollOffset";
 import bgImage from "/public/images/blob.svg";
 
 interface Dictionary {
-  Title1: string;
-  TitleBlue: string;
-  Title2: string;
-  Comment: string;
-  Placeholder: string;
-  Button: string;
+  title1: string;
+  titleBlue: string;
+  title2: string;
+  comment: string;
+  placeholder: string;
+  button: string;
 }
 
 interface JoinProps {
@@ -35,12 +35,12 @@ const Join = ({ join_props, lang }: JoinProps) => {
         <div className="relative lg:px-16 py-12">
           <div className="max-w-lg mx-auto text-center">
             <h2 className="mb-4 text-3xl lg:text-4xl font-bold font-heading wow animate__animated animate__fadeIn">
-              <span className="">{join_props.Title1}</span>
-              <span className="text-blue-500">{join_props.TitleBlue}</span>
-              <span className="">{join_props.Title2}</span>
+              <span className="">{join_props.title1}</span>
+              <span className="text-blue-500">{join_props.titleBlue}</span>
+              <span className="">{join_props.title2}</span>
             </h2>
             <p className="mb-8 text-blueGray-400 wow animate__animated animate__fadeIn">
-              {join_props.Comment}
+              {join_props.comment}
             </p>
             <div className="p-4 bg-white rounded-lg flex flex-wrap max-w-md mx-auto wow animate__animated animate__fadeIn">
               {/* <div className="p-4 bg-white rounded-lg flex flex-wrap max-w-md mx-auto wow animate__animated animate__fadeIn"> */}
@@ -57,14 +57,14 @@ const Join = ({ join_props, lang }: JoinProps) => {
                 <input
                   className="w-full pl-3 py-4 text-xs text-blueGray-400 font-semibold leading-none bg-blueGray-100 outline-none"
                   type="text"
-                  placeholder={join_props.Placeholder}
+                  placeholder={join_props.placeholder}
                 ></input>
               </div>
               <button
                 className="w-full md:w-auto py-4 px-8 text-xs text-white font-semibold leading-none bg-blue-500 hover:bg-blue-700 rounded"
                 type="submit"
               >
-                {join_props.Button}
+                {join_props.button}
               </button>
             </div>
           </div>
