@@ -9,8 +9,8 @@ interface TeamMembersProps {
 const TeamMembers = ({ team_members_props }: TeamMembersProps) => {
   return (
     <ul className="flex flex-wrap pb-4">
-      {Object.entries(team_members_props).map(([memberId, member_prop]) => (
-        <MemberItem key={memberId} member_prop={member_prop} />
+      {Object.entries(team_members_props).map(([memberId, member_props]) => (
+        <MemberItem key={memberId} member_props={member_props} />
       ))}
     </ul>
   );

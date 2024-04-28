@@ -18,15 +18,32 @@
     "JoinUs": "コンタクト"
   },
   "features_props": {
-    "Product": "概要",
-    "Features": "特徴",
-    "Team": "チーム",
-    "JoinUs": "コンタクト"
+    "headline1": "We are ",
+    "headline2": "awesome team",
+    "headline3": "for your business dream",
+    "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis. Quisque vitae nulla malesuada, auctor arcu vitae, luctus nisi. Sed elementum vitae ligula id imperdiet.",
+    "feature_cards_props": {
+      "1": {
+        "img_path": "Currency-rafiki.svg",
+        "title": "Project Initialization",
+        "comment": "Project initiation ensures that you lay a strong foundation for a new project in your company our team."
+      },
+      "2": {
+        "img_path": "Currency-rafiki.svg",
+        "title": "Project planning",
+        "comment": "A project plan is essential to keep everything related to the project organized, methodical, and on track."
+      },
+      "3": {
+        "img_path": "Currency-rafiki.svg",
+        "title": "Project planning",
+        "comment": "A project plan is essential to keep everything related to the project organized, methodical, and on track."
+      }
+    }
   },
   "team_props": {
-    "Title": "Our Management Team",
-    "Comment": "Afin Technologiesは、政府機関、テック業界等、関連する全ての経験、ナレッジを持ち合わせたメンバーによって運営されています。",
-    "Members": {
+    "title": "Our Management Team",
+    "comment": "Afin Technologiesは、政府機関、テック業界等、関連する全ての経験、ナレッジを持ち合わせたメンバーによって運営されています。",
+    "members": {
       "Ko": {
         "fullname": "西山 洸",
         "title": "CEO",
@@ -54,16 +71,16 @@
     }
   },
   "join_props": {
-    "Title1": "Afin Technologiesサービス開始 ",
-    "TitleBlue": "ウェイティングリスト ",
-    "Title2": "登録",
-    "Comment": "サービスの正式な開始時期や、重要なお知らせについて、ご登録のメールアドレスにご案内いたします。※サービスに関するお問い合わせ等はinfo@afintech.ioにご連絡ください。",
-    "Placeholder": "Emailアドレス",
-    "Button": "登録する"
+    "title1": "Afin Technologiesサービス開始 ",
+    "titleBlue": "ウェイティングリスト ",
+    "title2": "登録",
+    "comment": "サービスの正式な開始時期や、重要なお知らせについて、ご登録のメールアドレスにご案内いたします。※サービスに関するお問い合わせ等はinfo@afintech.ioにご連絡ください。",
+    "placeholder": "Emailアドレス",
+    "button": "登録する"
   },
   "footer_props": {
-    "Address": "東京都渋谷区渋谷3丁目5−16",
-    "Phone": "+81 50 5534 1696",
-    "Email": "info@afintech.io"
+    "address": "東京都渋谷区渋谷3丁目5−16",
+    "phone": "+81 50 5534 1696",
+    "email": "info@afintech.io"
   }
 }

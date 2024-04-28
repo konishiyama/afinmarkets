@@ -1,27 +1,21 @@
 "use client";
 
-import Link from "next/link";
-import Image from "next/image";
-import { type Locale } from "../../../i18n-config";
-import Layout from "./layouts/Layout";
 import SectionContainer from "./layouts/SectionContainer";
 import ScrollOffset from "./common/ScrollOffset";
-import coverImage from "/public/images/Currency-rafiki.png";
-import coverImageSvg from "/public/images/Currency-rafiki.svg";
+import FeatureCards from "./items/FeatureCards";
+import { Cards } from "./common/interfaces";
 
-interface Dictionary {
-  Product: string;
-  Features: string;
-  Team: string;
-  JoinUs: string;
+interface FeatureProps {
+  features_props: {
+    headline1: string;
+    headline2: string;
+    headline3: string;
+    comment: string;
+    feature_cards_props: Cards;
+  };
 }
 
-interface FeaturesProps {
-  features_props: Dictionary;
-  lang: Locale;
-}
-
-const Features = ({ features_props, lang }: FeaturesProps) => {
+const Features = ({ features_props }: FeatureProps) => {
   return (
     <div className="bg-blueGray-50">
       <div className="px-4 mx-auto xl:max-w-screen-xl">
@@ -38,89 +32,24 @@ const Features = ({ features_props, lang }: FeaturesProps) => {
           <div className="flex flex-wrap items-center justify-between max-w-2xl lg:max-w-full mb-12">
             <div className="w-full lg:w-1/2 mb-4 lg:mb-0">
               <h2 className="text-3xl md:text-4xl font-bold font-heading wow animate__animated animate__fadeInDown">
-                <span>We are</span>
-                <span className="text-blue-500"> awesome team</span>
+                <span>{features_props.headline1}</span>
+                <span className="text-blue-500">
+                  {" "}
+                  {features_props.headline2}
+                </span>
                 <br />
-                <span>for your business dream</span>
+                <span>{features_props.headline3}</span>
               </h2>
             </div>
             <div className="w-full lg:w-1/2">
               <p className="text-blueGray-400 leading-loose wow animate__animated animate__fadeIn">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                luctus eget justo et iaculis. Quisque vitae nulla malesuada,
-                auctor arcu vitae, luctus nisi. Sed elementum vitae ligula id
-                imperdiet.
+                {features_props.comment}
               </p>
             </div>
           </div>
-          <div className="flex flex-wrap -mx-3 -mb-6 text-center">
-            <div
-              className="hover-up-5 w-full md:w-1/2 lg:w-1/3 px-3 mb-6 wow animate__animated animate__fadeIn"
-              data-wow-delay=".3s"
-            >
-              <div className="p-12 bg-white shadow rounded">
-                <div className="flex w-12 h-12 mx-auto items-center justify-center text-blue-800 font-bold font-heading bg-blue-200 rounded-full">
-                  1
-                </div>
-                <Image
-                  className="h-36 mx-auto my-4"
-                  src={coverImageSvg}
-                  alt="Monst"
-                />
-                <h3 className="mb-2 font-bold font-heading text-xl">
-                  Project Initialization
-                </h3>
-                <p className="text-sm text-blueGray-400 leading-relaxed">
-                  Project initiation ensures that you lay a strong foundation
-                  for a new project in your company our team.
-                </p>
-              </div>
-            </div>
-            <div
-              className="hover-up-5 w-full md:w-1/2 lg:w-1/3 px-3 mb-6 wow animate__animated animate__fadeIn"
-              data-wow-delay=".5s"
-            >
-              <div className="p-12 bg-white shadow rounded">
-                <div className="flex w-12 h-12 mx-auto items-center justify-center text-blue-800 font-bold font-heading bg-blue-200 rounded-full">
-                  2
-                </div>
-                <Image
-                  className="h-36 mx-auto my-4"
-                  src={coverImageSvg}
-                  alt="Monst"
-                />
-                <h3 className="mb-2 font-bold font-heading text-xl">
-                  Project planning
-                </h3>
-                <p className="text-sm text-blueGray-400 leading-relaxed">
-                  A project plan is essential to keep everything related to the
-                  project organized, methodical, and on track.
-                </p>
-              </div>
-            </div>
-            <div className="hover-up-5 w-full lg:w-1/3 px-3 mb-6">
-              <div
-                className="p-12 bg-white shadow rounded wow animate__animated animate__fadeIn"
-                data-wow-delay=".7s"
-              >
-                <div className="flex w-12 h-12 mx-auto items-center justify-center text-blue-800 font-bold font-heading bg-blue-200 rounded-full">
-                  3
-                </div>
-                <Image
-                  className="h-36 mx-auto my-4"
-                  src={coverImageSvg}
-                  alt="Monst"
-                />
-                <h3 className="mb-2 font-bold font-heading text-xl">
-                  Project organization
-                </h3>
-                <p className="text-sm text-blueGray-400 leading-relaxed">
-                  Moving forward you will be able to keep yourself and your team
-                  on track, and address challenges early.
-                </p>
-              </div>
-            </div>
-          </div>
+          <FeatureCards
+            feature_cards_props={features_props.feature_cards_props}
+          />
         </SectionContainer>
       </div>
     </div>
