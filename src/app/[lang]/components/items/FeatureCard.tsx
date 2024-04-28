@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import coverImageSvg from "/public/images/Currency-rafiki.svg";
-import { CardItem } from "../common/interfaces";
+import { CardItem } from "../../../../interfaces";
 
 interface FeatureProps {
   feature_props: CardItem;

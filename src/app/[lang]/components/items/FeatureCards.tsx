@@ -1,6 +1,6 @@
 import FeatureCard from "./FeatureCard";
 import profImage from "/public/images/konishiyama.jpg";
-import { Cards } from "../common/interfaces";
+import { Cards } from "../../../../interfaces";
 
 interface FeatureCardsProps {
   feature_cards_props: Cards;

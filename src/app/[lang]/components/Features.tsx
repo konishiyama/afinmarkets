@@ -3,7 +3,7 @@
 import SectionContainer from "./layouts/SectionContainer";
 import ScrollOffset from "./common/ScrollOffset";
 import FeatureCards from "./items/FeatureCards";
-import { Cards } from "./common/interfaces";
+import { Cards } from "../../../interfaces";
 
 interface FeaturesProps {
   features_props: {

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import profImage from "/public/images/konishiyama.jpg";
-import { Member, Members } from "../common/interfaces";
+import { Member, Members } from "../../../../interfaces";
 
 interface MemberProps {
   member_props: Member;

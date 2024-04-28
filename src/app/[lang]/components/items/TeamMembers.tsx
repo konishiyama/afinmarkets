@@ -1,6 +1,6 @@
 import MemberItem from "./MemberItem";
 import profImage from "/public/images/konishiyama.jpg";
-import { Members } from "../common/interfaces";
+import { Members } from "../../../../interfaces";
 
 interface TeamMembersProps {
   team_members_props: Members;

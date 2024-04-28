@@ -5,7 +5,7 @@ import Layout from "./layouts/Layout";
 import SectionContainer from "./layouts/SectionContainer";
 import ScrollOffset from "./common/ScrollOffset";
 import TeamMembers from "./items/TeamMembers";
-import { Members } from "./common/interfaces";
+import { Members } from "../../../interfaces";
 
 interface TeamProps {
   team_props: {
