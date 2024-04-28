@@ -5,7 +5,7 @@ import ScrollOffset from "./common/ScrollOffset";
 import FeatureCards from "./items/FeatureCards";
 import { Cards } from "./common/interfaces";
 
-interface FeatureProps {
+interface FeaturesProps {
   features_props: {
     headline1: string;
     headline2: string;
@@ -15,7 +15,7 @@ interface FeatureProps {
   };
 }
 
-const Features = ({ features_props }: FeatureProps) => {
+const Features = ({ features_props }: FeaturesProps) => {
   return (
     <div className="bg-blueGray-50">
       <div className="px-4 mx-auto xl:max-w-screen-xl">
@@ -34,7 +34,6 @@ const Features = ({ features_props }: FeatureProps) => {
               <h2 className="text-3xl md:text-4xl font-bold font-heading wow animate__animated animate__fadeInDown">
                 <span>{features_props.headline1}</span>
                 <span className="text-blue-500">
-                  {" "}
                   {features_props.headline2}
                 </span>
                 <br />

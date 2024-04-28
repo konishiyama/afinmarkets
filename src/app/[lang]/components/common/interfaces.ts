@@ -11,12 +11,12 @@ export interface Members {
 }
 
 // Features interfaces
-export interface Feature {
+export interface CardItem {
   title: string;
   comment: string;
   img_path: string;
 }
 
 export interface Cards {
-  [key: string]: Feature;
+  [key: string]: CardItem;
 }

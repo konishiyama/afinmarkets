@@ -3,10 +3,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import coverImageSvg from "/public/images/Currency-rafiki.svg";
-import { Feature } from "../common/interfaces";
+import { CardItem } from "../common/interfaces";
 
 interface FeatureProps {
-  feature_props: Feature;
+  feature_props: CardItem;
   featureId: string;
 }
 
