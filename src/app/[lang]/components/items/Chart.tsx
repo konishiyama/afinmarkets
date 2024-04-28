@@ -33,8 +33,9 @@ export const options = {
 
 const Chart = () => {
   return (
-    <div className="bg-white p-10 rounded-lg shadow lg:shadow-lg shadow-boxShadow">
+    <div className="bg-white p-2 lg:p-10 rounded-lg shadow lg:shadow-lg shadow-boxShadow w-full">
       <Line
+        className="mx-auto w-full"
         options={options}
         data={{
           labels: [
