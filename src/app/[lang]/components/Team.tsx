@@ -3,7 +3,7 @@
 import { type Locale } from "../../../i18n-config";
 import Layout from "./layouts/Layout";
 import SectionContainer from "./layouts/SectionContainer";
-import ScrollOffset from "./common/ScrollOffset";
+import ScrollOffset from "./layouts/ScrollOffset";
 import TeamMembers from "./items/TeamMembers";
 import { Members } from "../../../interfaces";
 

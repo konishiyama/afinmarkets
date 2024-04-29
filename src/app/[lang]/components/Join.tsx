@@ -1,11 +1,8 @@
 "use client";
 
-import Link from "next/link";
-import Image from "next/image";
 import { type Locale } from "../../../i18n-config";
 import Layout from "./layouts/Layout";
 import SectionContainer from "./layouts/SectionContainer";
-import ScrollOffset from "./common/ScrollOffset";
 import bgImage from "/public/images/blob.svg";
 
 interface Dictionary {

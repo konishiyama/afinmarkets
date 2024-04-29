@@ -1,14 +1,11 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import { type Locale } from "../../../i18n-config";
 import Layout from "./layouts/Layout";
 import SectionContainer from "./layouts/SectionContainer";
-import ScrollOffset from "./common/ScrollOffset";
 import Chart from "./items/Chart";
 import productBgImage from "/public/images/pattern.png";
-import chartImage from "/public/images/dashboard.png";
 
 interface Dictionary {
   Product: string;

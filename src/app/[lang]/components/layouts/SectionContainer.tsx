@@ -1,5 +1,5 @@
 "use client";
-import ScrollOffset from "../common/ScrollOffset";
+import ScrollOffset from "./ScrollOffset";
 
 export default function SectionContainer({
   children, // will be a page or nested layout

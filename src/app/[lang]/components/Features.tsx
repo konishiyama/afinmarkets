@@ -1,7 +1,6 @@
 "use client";
 
 import SectionContainer from "./layouts/SectionContainer";
-import ScrollOffset from "./common/ScrollOffset";
 import FeatureCards from "./items/FeatureCards";
 import Layout from "./layouts/Layout";
 import { Cards } from "../../../interfaces";
