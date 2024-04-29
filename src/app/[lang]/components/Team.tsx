@@ -19,18 +19,7 @@ interface TeamProps {
 const Team = ({ team_props, lang }: TeamProps) => {
   return (
     <Layout backgroundColor="bg-blueGray-50">
-      <SectionContainer>
-        <ScrollOffset id="Team" />
-        <div className="max-w-lg mx-auto mb-12 text-center">
-          <div className="max-w-lg mx-auto text-center">
-            <span
-              className="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl wow animate__animated animate__fadeIn"
-              data-wow-delay=".3s"
-            >
-              Team
-            </span>
-          </div>
-        </div>
+      <SectionContainer section_title="Team">
         <div className="max-w-lg mx-auto mb-12 text-center">
           <h2
             className="text-3xl md:text-4xl mt-2 mb-4 font-bold font-heading wow animate__animated animate__fadeIn"

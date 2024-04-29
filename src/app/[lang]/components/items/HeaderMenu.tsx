@@ -4,7 +4,7 @@ interface Dictionary {
   Product: string;
   Features: string;
   Team: string;
-  JoinUs: string;
+  Join: string;
 }
 
 interface HeaderProps {
