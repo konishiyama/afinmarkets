@@ -20,7 +20,7 @@ interface FooterProps {
 const Footer = ({ footer_props, lang }: FooterProps) => {
   return (
     <footer className="py-20 bg-white">
-      <Layout>
+      <Layout backgroundColor="">
         <div
           className="container px-4 mx-auto wow animate__animated animate__fadeIn"
           data-wow-delay=".3s"

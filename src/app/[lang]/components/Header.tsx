@@ -49,7 +49,7 @@ const Header = ({ header_props, lang }: HeaderProps) => {
         backgroundColor: `rgba(${headerBackground})`,
       }}
     >
-      <Layout>
+      <Layout backgroundColor="">
         <nav
           className="flex justify-between items-center py-6"
           aria-label="Global"
