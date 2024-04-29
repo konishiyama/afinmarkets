@@ -24,7 +24,7 @@ interface JoinProps {
 
 const Join = ({ join_props, lang }: JoinProps) => {
   return (
-    <Layout>
+    <Layout backgroundColor="bg-white">
       <ScrollOffset id="JoinUs" />
       <div
         className="py-20 bg-top bg-no-repeat"

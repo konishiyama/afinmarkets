@@ -18,7 +18,7 @@ interface TeamProps {
 
 const Team = ({ team_props, lang }: TeamProps) => {
   return (
-    <Layout>
+    <Layout backgroundColor="bg-blueGray-50">
       <SectionContainer>
         <ScrollOffset id="Team" />
         <div className="max-w-lg mx-auto mb-12 text-center">

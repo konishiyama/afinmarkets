@@ -22,7 +22,7 @@ interface CoverProps {
 
 const Cover = ({ cover_props, lang }: CoverProps) => {
   return (
-    <Layout>
+    <Layout backgroundColor="bg-white">
       <div className="flex flex-wrap items-center -mx-3 xl:px-16 pt-8 md:pt-16 lg:pt-0">
         <div className="w-full lg:w-1/2 px-3">
           <div className="max-w-lg lg:max-w-md mx-auto lg:mx-0 mb-8 text-center lg:text-left">

@@ -24,7 +24,7 @@ interface ProductProps {
 
 const Product = ({ product_props, lang }: ProductProps) => {
   return (
-    <Layout>
+    <Layout backgroundColor="bg-blueGray-50">
       <div className="flex-wrap items-center xl:px-16 py-12 md:pb-12">
         <ScrollOffset id="Product" />
         <div className="max-w-lg mx-auto mb-12 text-center">
