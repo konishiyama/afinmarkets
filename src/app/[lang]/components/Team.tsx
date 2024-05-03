@@ -13,10 +13,9 @@ interface TeamProps {
     comment: string;
     members: Members;
   };
-  lang: Locale;
 }
 
-const Team = ({ team_props, lang }: TeamProps) => {
+const Team = ({ team_props }: TeamProps) => {
   return (
     <Layout backgroundColor="bg-blueGray-50">
       <SectionContainer section_title="Team">

@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { type Locale } from "../../../i18n-config";
 import Layout from "./layouts/Layout";
 import coverImage from "/public/images/Currency-rafiki.png";
 

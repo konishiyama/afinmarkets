@@ -9,15 +9,13 @@ import logo from "/public/images/20240414_logo.png";
 import HeaderMenu from "./items/HeaderMenu";
 import Layout from "./layouts/Layout";
 
-interface Dictionary {
-  Product: string;
-  Features: string;
-  Team: string;
-  Join: string;
-}
-
 interface HeaderProps {
-  header_props: Dictionary;
+  header_props: {
+    Product: string;
+    Features: string;
+    Team: string;
+    Join: string;
+  };
   lang: Locale;
 }
 

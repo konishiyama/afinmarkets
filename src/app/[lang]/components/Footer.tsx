@@ -6,14 +6,12 @@ import { type Locale } from "../../../i18n-config";
 import logo from "/public/images/20240414_logo.png";
 import Layout from "./layouts/Layout";
 
-interface Dictionary {
-  address: string;
-  phone: string;
-  email: string;
-}
-
 interface FooterProps {
-  footer_props: Dictionary;
+  footer_props: {
+    address: string;
+    phone: string;
+    email: string;
+  };
   lang: Locale;
 }
 

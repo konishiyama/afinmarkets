@@ -7,19 +7,16 @@ import SectionContainer from "./layouts/SectionContainer";
 import Chart from "./items/Chart";
 import productBgImage from "/public/images/pattern.png";
 
-interface Dictionary {
-  Product: string;
-  Features: string;
-  Team: string;
-  JoinUs: string;
-}
-
 interface ProductProps {
-  product_props: Dictionary;
-  lang: Locale;
+  product_props: {
+    Product: string;
+    Features: string;
+    Team: string;
+    JoinUs: string;
+  };
 }
 
-const Product = ({ product_props, lang }: ProductProps) => {
+const Product = ({ product_props }: ProductProps) => {
   return (
     <Layout backgroundColor="bg-blueGray-50">
       <SectionContainer section_title="Product">

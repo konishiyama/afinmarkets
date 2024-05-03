@@ -5,21 +5,18 @@ import Layout from "./layouts/Layout";
 import SectionContainer from "./layouts/SectionContainer";
 import bgImage from "/public/images/blob.svg";
 
-interface Dictionary {
-  title1: string;
-  titleBlue: string;
-  title2: string;
-  comment: string;
-  placeholder: string;
-  button: string;
-}
-
 interface JoinProps {
-  join_props: Dictionary;
-  lang: Locale;
+  join_props: {
+    title1: string;
+    titleBlue: string;
+    title2: string;
+    comment: string;
+    placeholder: string;
+    button: string;
+  };
 }
 
-const Join = ({ join_props, lang }: JoinProps) => {
+const Join = ({ join_props }: JoinProps) => {
   return (
     <Layout backgroundColor="bg-white">
       <SectionContainer section_title="Join">
