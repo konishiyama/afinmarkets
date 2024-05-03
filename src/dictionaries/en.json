@@ -6,10 +6,15 @@
     "Join": "Join"
   },
   "cover_props": {
-    "Product": "概要",
-    "Features": "特徴",
-    "Team": "チーム",
-    "JoinUs": "コンタクト"
+    "headline1": "Exclusive Agency For",
+    "headline2": " Technology ",
+    "headline3": "Provide Solution",
+    "comment1": "We are",
+    "comment2": " Monst",
+    "comment3": ", a Creative Design",
+    "comment4": "Helping you maximize operations management with digitization",
+    "button1": "Key Features",
+    "button2": "Who We Are?"
   },
   "product_props": {
     "Product": "概要",
