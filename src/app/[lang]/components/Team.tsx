@@ -5,15 +5,7 @@ import Layout from "./layouts/Layout";
 import SectionContainer from "./layouts/SectionContainer";
 import ScrollOffset from "./layouts/ScrollOffset";
 import TeamMembers from "./items/TeamMembers";
-import { Members } from "../../../interfaces";
-
-interface TeamProps {
-  team_props: {
-    title: string;
-    comment: string;
-    members: Members;
-  };
-}
+import { TeamProps } from "../../../interfaces";
 
 const Team = ({ team_props }: TeamProps) => {
   return (

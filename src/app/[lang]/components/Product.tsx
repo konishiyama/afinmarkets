@@ -6,15 +6,7 @@ import Layout from "./layouts/Layout";
 import SectionContainer from "./layouts/SectionContainer";
 import Chart from "./items/Chart";
 import productBgImage from "/public/images/pattern.png";
-
-interface ProductProps {
-  product_props: {
-    Product: string;
-    Features: string;
-    Team: string;
-    JoinUs: string;
-  };
-}
+import { ProductProps } from "@/interfaces";
 
 const Product = ({ product_props }: ProductProps) => {
   return (

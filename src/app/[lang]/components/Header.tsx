@@ -8,16 +8,7 @@ import LocaleSwitcher from "./items/LocaleSwitcher";
 import logo from "/public/images/20240414_logo.png";
 import HeaderMenu from "./items/HeaderMenu";
 import Layout from "./layouts/Layout";
-
-interface HeaderProps {
-  header_props: {
-    Product: string;
-    Features: string;
-    Team: string;
-    Join: string;
-  };
-  lang: Locale;
-}
+import { HeaderProps } from "@/interfaces";
 
 const Header = ({ header_props, lang }: HeaderProps) => {
   const [clientWindowHeight, setClientWindowHeight] = useState<number>(0);

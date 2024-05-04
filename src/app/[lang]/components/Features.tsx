@@ -3,17 +3,7 @@
 import SectionContainer from "./layouts/SectionContainer";
 import FeatureCards from "./items/FeatureCards";
 import Layout from "./layouts/Layout";
-import { Cards } from "../../../interfaces";
-
-interface FeaturesProps {
-  features_props: {
-    headline1: string;
-    headline2: string;
-    headline3: string;
-    comment: string;
-    feature_cards_props: Cards;
-  };
-}
+import { FeaturesProps, Cards } from "../../../interfaces";
 
 const Features = ({ features_props }: FeaturesProps) => {
   return (

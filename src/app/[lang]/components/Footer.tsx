@@ -5,15 +5,7 @@ import Image from "next/image";
 import { type Locale } from "../../../i18n-config";
 import logo from "/public/images/20240414_logo.png";
 import Layout from "./layouts/Layout";
-
-interface FooterProps {
-  footer_props: {
-    address: string;
-    phone: string;
-    email: string;
-  };
-  lang: Locale;
-}
+import { FooterProps } from "@/interfaces";
 
 const Footer = ({ footer_props, lang }: FooterProps) => {
   return (

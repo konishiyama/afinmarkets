@@ -4,20 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Layout from "./layouts/Layout";
 import coverImage from "/public/images/Currency-rafiki.png";
-
-interface CoverProps {
-  cover_props: {
-    headline1: string;
-    headline2: string;
-    headline3: string;
-    comment1: string;
-    comment2: string;
-    comment3: string;
-    comment4: string;
-    button1: string;
-    button2: string;
-  };
-}
+import { CoverProps } from "@/interfaces";
 
 const Cover = ({ cover_props }: CoverProps) => {
   return (
