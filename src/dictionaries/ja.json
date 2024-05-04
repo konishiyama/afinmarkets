@@ -84,7 +84,13 @@
     "placeholderEmail": "Emailアドレス（必須項目）",
     "placeholderOrg": "ご所属（選択項目）",
     "placeholderMessage": "メッセージ（選択項目）",
-    "submitButton": "登録する"
+    "submitButton": "登録する",
+    "successfulModalTitle": "登録成功",
+    "errorModalTitle": "登録失敗",
+    "successfulModalComment": "ウェイティングリストへの登録に成功しました。サービスの正式ローンチまでしばらくお待ち下さい！",
+    "errorModalComment": "登録に失敗しました。ネットワーク等を確認の上、はじめからお試しください。",
+    "successfulModalButton": "閉じる",
+    "errorModalButton": "閉じる"
   },
   "footer_props": {
     "address": "東京都渋谷区渋谷3丁目5−16",

@@ -80,11 +80,17 @@
     "titleBlue": "Waiting list ",
     "title2": "to get the notice!",
     "comment": "You will be informed the official launch of our service and important notices! *You can also add some messages for any inquiries",
-    "placeholderName": "*Name",
-    "placeholderEmail": "*Email",
+    "placeholderName": "Name**",
+    "placeholderEmail": "Email**",
     "placeholderOrg": "Organization *If any",
     "placeholderMessage": "Message *If any",
-    "submitButton": "Sign Up"
+    "submitButton": "Sign Up",
+    "successfulModalTitle": "Sign up successful!",
+    "errorModalTitle": "Sign up error",
+    "successfulModalComment": "Sign Up has been successfully submitted!",
+    "errorModalComment": "Sign Up failed. Please try it again.",
+    "successfulModalButton": "Got it, thanks!",
+    "errorModalButton": "Try it again"
   },
   "footer_props": {
     "address": "3-5-16, Shibuya, Shibuya-ward, Tokyo, Japan",

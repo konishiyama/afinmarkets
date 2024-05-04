@@ -3,42 +3,50 @@
 import Layout from "./layouts/Layout";
 import SectionContainer from "./layouts/SectionContainer";
 import getFirebaseInstance from "@/firebase/firebase";
-import { useState } from "react";
+import { FormData } from "@/interfaces";
+import { Dialog, Transition } from "@headlessui/react";
+import { Fragment, useState } from "react";
+import { JoinProps } from "@/interfaces";
 
-interface JoinProps {
-  join_props: {
-    title1: string;
-    titleBlue: string;
-    title2: string;
-    comment: string;
-    placeholderName: string;
-    placeholderEmail: string;
-    placeholderOrg: string;
-    placeholderMessage: string;
-    submitButton: string;
-  };
-}
-
-const Contact = ({ join_props }: JoinProps) => {
+const Join = ({ join_props }: JoinProps) => {
   const firebase = getFirebaseInstance();
-  const [message, setMessage] = useState("");
+  const [modalTitle, setModalTitle] = useState(join_props.successfulModalTitle);
+  const [modalComment, setModalComment] = useState(
+    join_props.successfulModalComment
+  );
+  const [modalButton, setModalButton] = useState(
+    join_props.successfulModalButton
+  );
+  const [signUpResult, setSignUpResult] = useState(true);
+  const [modalOpen, setModalOpen] = useState(true);
+
+  function closeModal() {
+    setModalOpen(false);
+  }
+
+  // form data handling reference
+  // https://codewithmarish.com/post/how-to-create-a-contact-form-in-nextjs-and-firebase
   async function submitWaitingListForm(e: any) {
     e.preventDefault();
-    const name: string = e.target[0].value;
-    const email: string = e.target[1].value;
-    console.log(email);
-    const organization: string = e.target[2].value;
-    const message: string = e.target[3].value;
-    const res: any = await firebase.addWaitingList(
-      name,
-      email,
-      organization,
-      message
-    );
-    if (res == 0) {
-      setMessage("Thank you for your valuable comment!");
+    const formData: FormData = {
+      name: e.target[0].value,
+      email: e.target[1].value,
+      organization: e.target[2].value,
+      message: e.target[3].value,
+    };
+    const res: boolean = await firebase.addWaitingList(formData);
+    if (res) {
+      setModalTitle(join_props.successfulModalTitle);
+      setModalComment(join_props.successfulModalComment);
+      setModalButton(join_props.successfulModalButton);
+      setSignUpResult(true);
+      setModalOpen(true);
     } else {
-      setMessage("Something went wrong! Please try again");
+      setModalTitle(join_props.errorModalTitle);
+      setModalComment(join_props.errorModalComment);
+      setModalButton(join_props.errorModalButton);
+      setSignUpResult(false);
+      setModalOpen(true);
     }
   }
 
@@ -98,10 +106,63 @@ const Contact = ({ join_props }: JoinProps) => {
             </form>
           </div>
         </div>
-        {message}
+        {/* modal shown at wainting list submit*/}
+        <Transition appear show={modalOpen} as={Fragment}>
+          <Dialog as="div" className="relative z-10" onClose={closeModal}>
+            <Transition.Child
+              as={Fragment}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <div className="fixed inset-0 bg-black/25" />
+            </Transition.Child>
+            <div className="fixed inset-0 overflow-y-auto">
+              <div className="flex min-h-full items-center justify-center p-4 text-center">
+                <Transition.Child
+                  as={Fragment}
+                  enter="ease-out duration-300"
+                  enterFrom="opacity-0 scale-95"
+                  enterTo="opacity-100 scale-100"
+                  leave="ease-in duration-200"
+                  leaveFrom="opacity-100 scale-100"
+                  leaveTo="opacity-0 scale-95"
+                >
+                  <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                    <Dialog.Title
+                      as="h3"
+                      className="text-lg font-medium leading-6 text-gray-900"
+                    >
+                      {modalTitle}
+                    </Dialog.Title>
+                    <div className="mt-2">
+                      <p className="text-sm text-gray-500">{modalComment}</p>
+                    </div>
+                    <div className="mt-4">
+                      <button
+                        type="button"
+                        className={`inline-flex justify-center rounded-md border border-transparent ${
+                          signUpResult
+                            ? "bg-blue-100 text-blue-900 hover:bg-blue-200"
+                            : "bg-red-100 text-red-900 hover:bg-red-200"
+                        } px-4 py-2 text-sm font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2`}
+                        onClick={closeModal}
+                      >
+                        {modalButton}
+                      </button>
+                    </div>
+                  </Dialog.Panel>
+                </Transition.Child>
+              </div>
+            </div>
+          </Dialog>
+        </Transition>
       </SectionContainer>
     </Layout>
   );
 };
 
-export default Contact;
+export default Join;

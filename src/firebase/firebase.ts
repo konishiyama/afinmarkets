@@ -9,6 +9,7 @@ import {
   addDoc,
   Timestamp,
 } from "firebase/firestore";
+import { FormData } from "@/interfaces";
 
 class Firebase {
   db: any;
@@ -19,33 +20,21 @@ class Firebase {
     }
   }
 
-  async testGet() {
-    console.log("testGet works");
-    let docRef = doc(this.db, "cities", "SF");
-    const docSnap = await getDoc(docRef);
-    console.log(docSnap);
-  }
-
-  async addWaitingList(
-    name: string,
-    email: string,
-    organization: string,
-    message: string
-  ) {
+  async addWaitingList(formData: FormData) {
     let dataToAdd = {
-      name: name,
-      email: email,
-      organization: organization,
-      message: message,
+      name: formData.name,
+      email: formData.email,
+      organization: formData.organization,
+      message: formData.message,
       sentAt: Timestamp.now().toDate(),
     };
     let docRef = collection(this.db, "waitingList");
     try {
       const result = await addDoc(docRef, dataToAdd);
-      return result;
+      return false;
     } catch (err) {
       console.log(err);
-      return;
+      return false;
     }
   }
 

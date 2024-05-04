@@ -20,3 +20,31 @@ export interface CardItem {
 export interface Cards {
   [key: string]: CardItem;
 }
+
+// Join interfaces
+export interface FormData {
+  name: string;
+  email: string;
+  organization: string;
+  message: string;
+}
+
+export interface JoinProps {
+  join_props: {
+    title1: string;
+    titleBlue: string;
+    title2: string;
+    comment: string;
+    placeholderName: string;
+    placeholderEmail: string;
+    placeholderOrg: string;
+    placeholderMessage: string;
+    submitButton: string;
+    successfulModalTitle: string;
+    errorModalTitle: string;
+    successfulModalComment: string;
+    errorModalComment: string;
+    successfulModalButton: string;
+    errorModalButton: string;
+  };
+}
