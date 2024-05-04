@@ -2,6 +2,7 @@
 
 import Layout from "./layouts/Layout";
 import SectionContainer from "./layouts/SectionContainer";
+import getFirebaseInstance from "@/firebase/firebase";
 
 interface JoinProps {
   join_props: {
@@ -18,6 +19,12 @@ interface JoinProps {
 }
 
 const Contact = ({ join_props }: JoinProps) => {
+  const firebase = getFirebaseInstance();
+  async function handleSubmit() {
+    const result: any = await firebase.testGet();
+    // console.log(result);
+  }
+
   return (
     <Layout backgroundColor="bg-white">
       <SectionContainer section_title="Join">
@@ -72,6 +79,12 @@ const Contact = ({ join_props }: JoinProps) => {
             </form>
           </div>
         </div>
+        <button
+          className="mx-auto py-4 px-8 text-sm text-white font-semibold leading-none bg-blue-500 hover:bg-blue-700 rounded"
+          onClick={handleSubmit}
+        >
+          test
+        </button>
       </SectionContainer>
     </Layout>
   );
