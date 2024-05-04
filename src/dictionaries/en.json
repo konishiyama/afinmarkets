@@ -13,7 +13,7 @@
     "comment2": " Monst",
     "comment3": ", a Creative Design",
     "comment4": "Helping you maximize operations management with digitization",
-    "button1": "Key Features",
+    "button1": "Sign Up",
     "button2": "Who We Are?"
   },
   "product_props": {
@@ -78,10 +78,13 @@
   "join_props": {
     "title1": "Sign up for our ",
     "titleBlue": "Waiting list ",
-    "title2": "to get the notice at our launch!",
-    "comment": "You will be informed the official launch of our service and important notices! *You can also reach out to us by sending message to info@afintech.io for any inquiries.",
-    "placeholder": "Type Your Email",
-    "button": "Sign Up"
+    "title2": "to get the notice!",
+    "comment": "You will be informed the official launch of our service and important notices! *You can also add some messages for any inquiries",
+    "placeholderName": "**Name",
+    "placeholderEmail": "**Email",
+    "placeholderOrg": "Organization *If any",
+    "placeholderMessage": "Message *If any",
+    "submitButton": "Sign Up"
   },
   "footer_props": {
     "address": "3-5-16, Shibuya, Shibuya-ward, Tokyo, Japan",

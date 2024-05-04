@@ -42,7 +42,7 @@ const Cover = ({ cover_props }: CoverProps) => {
           <div className="text-center lg:text-left">
             <Link
               className="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-500 hover:bg-blue-700 rounded wow animate__animated animate__fadeIn"
-              href="#Features"
+              href="#Join"
             >
               {cover_props.button1}
             </Link>
