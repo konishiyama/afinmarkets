@@ -18,7 +18,7 @@ const Join = ({ join_props }: JoinProps) => {
     join_props.successfulModalButton
   );
   const [signUpResult, setSignUpResult] = useState(true);
-  const [modalOpen, setModalOpen] = useState(true);
+  const [modalOpen, setModalOpen] = useState(false);
 
   function closeModal() {
     setModalOpen(false);
