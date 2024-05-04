@@ -1,7 +1,14 @@
 import { error } from "console";
 import firebaseConfig from "./config";
 import { initializeApp } from "firebase/app";
-import { getFirestore, doc, getDoc, setDoc } from "firebase/firestore";
+import {
+  getFirestore,
+  doc,
+  getDoc,
+  collection,
+  addDoc,
+  Timestamp,
+} from "firebase/firestore";
 
 class Firebase {
   db: any;
@@ -19,6 +26,29 @@ class Firebase {
     console.log(docSnap);
   }
 
+  async addWaitingList(
+    name: string,
+    email: string,
+    organization: string,
+    message: string
+  ) {
+    let dataToAdd = {
+      name: name,
+      email: email,
+      organization: organization,
+      message: message,
+      sentAt: Timestamp.now().toDate(),
+    };
+    let docRef = collection(this.db, "waitingList");
+    try {
+      const result = await addDoc(docRef, dataToAdd);
+      return result;
+    } catch (err) {
+      console.log(err);
+      return;
+    }
+  }
+
   async getDocument(collection: string, id: string) {
     let docRef = doc(this.db, collection, id);
     let result = null;
@@ -32,21 +62,6 @@ class Firebase {
 
     return { result, error };
   }
-
-  // async addData(colllection: string, id: string, data: any) {
-  //   let result = null;
-  //   let error = null;
-
-  //   try {
-  //     result = await setDoc(doc(this.db, colllection, id), data, {
-  //       merge: true,
-  //     });
-  //   } catch (e) {
-  //     error = e;
-  //   }
-
-  //   return { result, error };
-  // }
 }
 
 let firebaseInstance: any;

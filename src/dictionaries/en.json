@@ -80,8 +80,8 @@
     "titleBlue": "Waiting list ",
     "title2": "to get the notice!",
     "comment": "You will be informed the official launch of our service and important notices! *You can also add some messages for any inquiries",
-    "placeholderName": "**Name",
-    "placeholderEmail": "**Email",
+    "placeholderName": "*Name",
+    "placeholderEmail": "*Email",
     "placeholderOrg": "Organization *If any",
     "placeholderMessage": "Message *If any",
     "submitButton": "Sign Up"

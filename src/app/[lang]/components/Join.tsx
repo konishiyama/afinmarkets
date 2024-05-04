@@ -3,6 +3,7 @@
 import Layout from "./layouts/Layout";
 import SectionContainer from "./layouts/SectionContainer";
 import getFirebaseInstance from "@/firebase/firebase";
+import { useState } from "react";
 
 interface JoinProps {
   join_props: {
@@ -20,9 +21,25 @@ interface JoinProps {
 
 const Contact = ({ join_props }: JoinProps) => {
   const firebase = getFirebaseInstance();
-  async function handleSubmit() {
-    const result: any = await firebase.testGet();
-    // console.log(result);
+  const [message, setMessage] = useState("");
+  async function submitWaitingListForm(e: any) {
+    e.preventDefault();
+    const name: string = e.target[0].value;
+    const email: string = e.target[1].value;
+    console.log(email);
+    const organization: string = e.target[2].value;
+    const message: string = e.target[3].value;
+    const res: any = await firebase.addWaitingList(
+      name,
+      email,
+      organization,
+      message
+    );
+    if (res == 0) {
+      setMessage("Thank you for your valuable comment!");
+    } else {
+      setMessage("Something went wrong! Please try again");
+    }
   }
 
   return (
@@ -40,9 +57,10 @@ const Contact = ({ join_props }: JoinProps) => {
             </p>
           </div>
           <div>
-            <form>
+            <form onSubmit={submitWaitingListForm}>
               <div className="mb-4">
                 <input
+                  required
                   className="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
                   type="text"
                   placeholder={join_props.placeholderName}
@@ -50,15 +68,16 @@ const Contact = ({ join_props }: JoinProps) => {
               </div>
               <div className="mb-4">
                 <input
+                  required
                   className="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
-                  type="text"
+                  type="email"
                   placeholder={join_props.placeholderEmail}
                 ></input>
               </div>
               <div className="mb-4">
                 <input
                   className="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
-                  type="email"
+                  type="text"
                   placeholder={join_props.placeholderOrg}
                 ></input>
               </div>
@@ -70,7 +89,7 @@ const Contact = ({ join_props }: JoinProps) => {
               </div>
               <div className="flex w-full items-center">
                 <button
-                  className="mx-auto py-4 px-8 text-sm text-white font-semibold leading-none bg-blue-500 hover:bg-blue-700 rounded"
+                  className="w-full py-4 px-8 text-sm text-white font-semibold leading-none bg-blue-500 hover:bg-blue-700 rounded"
                   type="submit"
                 >
                   {join_props.submitButton}
@@ -79,12 +98,7 @@ const Contact = ({ join_props }: JoinProps) => {
             </form>
           </div>
         </div>
-        <button
-          className="mx-auto py-4 px-8 text-sm text-white font-semibold leading-none bg-blue-500 hover:bg-blue-700 rounded"
-          onClick={handleSubmit}
-        >
-          test
-        </button>
+        {message}
       </SectionContainer>
     </Layout>
   );
