@@ -31,7 +31,7 @@ class Firebase {
     let docRef = collection(this.db, "waitingList");
     try {
       const result = await addDoc(docRef, dataToAdd);
-      return false;
+      return true;
     } catch (err) {
       console.log(err);
       return false;
