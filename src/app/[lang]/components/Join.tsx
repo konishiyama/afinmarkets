@@ -2,7 +2,7 @@
 
 import Layout from "./layouts/Layout";
 import SectionContainer from "./layouts/SectionContainer";
-import getFirebaseInstance from "@/firebase/firebase";
+// import getFirebaseInstance from "@/firebase/firebase";
 import { FormData } from "@/interfaces";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
