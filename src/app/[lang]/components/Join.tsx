@@ -2,14 +2,14 @@
 
 import Layout from "./layouts/Layout";
 import SectionContainer from "./layouts/SectionContainer";
-// import getFirebaseInstance from "@/firebase/firebase";
+import getFirebaseInstance from "@/firebase/firebase";
 import { FormData } from "@/interfaces";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import { JoinProps } from "@/interfaces";
 
 const Join = ({ join_props }: JoinProps) => {
-  // const firebase = getFirebaseInstance();
+  const firebase = getFirebaseInstance();
   const [modalTitle, setModalTitle] = useState(join_props.successfulModalTitle);
   const [modalComment, setModalComment] = useState(
     join_props.successfulModalComment
@@ -34,20 +34,20 @@ const Join = ({ join_props }: JoinProps) => {
       organization: e.target[2].value,
       message: e.target[3].value,
     };
-    // const res: boolean = await firebase.addWaitingList(formData);
-    // if (res) {
-    //   setModalTitle(join_props.successfulModalTitle);
-    //   setModalComment(join_props.successfulModalComment);
-    //   setModalButton(join_props.successfulModalButton);
-    //   setSignUpResult(true);
-    //   setModalOpen(true);
-    // } else {
-    //   setModalTitle(join_props.errorModalTitle);
-    //   setModalComment(join_props.errorModalComment);
-    //   setModalButton(join_props.errorModalButton);
-    //   setSignUpResult(false);
-    //   setModalOpen(true);
-    // }
+    const res: boolean = await firebase.addWaitingList(formData);
+    if (res) {
+      setModalTitle(join_props.successfulModalTitle);
+      setModalComment(join_props.successfulModalComment);
+      setModalButton(join_props.successfulModalButton);
+      setSignUpResult(true);
+      setModalOpen(true);
+    } else {
+      setModalTitle(join_props.errorModalTitle);
+      setModalComment(join_props.errorModalComment);
+      setModalButton(join_props.errorModalButton);
+      setSignUpResult(false);
+      setModalOpen(true);
+    }
   }
 
   return (
