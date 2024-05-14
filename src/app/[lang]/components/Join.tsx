@@ -7,9 +7,17 @@ import { FormData } from "@/interfaces";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import { JoinProps } from "@/interfaces";
+import { useRouter } from "next/navigation";
 
 const Join = ({ join_props }: JoinProps) => {
   const firebase = getFirebaseInstance();
+  const router = useRouter();
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [organization, setOrganization] = useState("");
+  const [message, setMessage] = useState("");
+
   const [modalTitle, setModalTitle] = useState(join_props.successfulModalTitle);
   const [modalComment, setModalComment] = useState(
     join_props.successfulModalComment
@@ -22,6 +30,11 @@ const Join = ({ join_props }: JoinProps) => {
 
   function closeModal() {
     setModalOpen(false);
+    setName("");
+    setEmail("");
+    setOrganization("");
+    setMessage("");
+    router.push("/");
   }
 
   // form data handling reference
@@ -29,10 +42,10 @@ const Join = ({ join_props }: JoinProps) => {
   async function submitWaitingListForm(e: any) {
     e.preventDefault();
     const formData: FormData = {
-      name: e.target[0].value,
-      email: e.target[1].value,
-      organization: e.target[2].value,
-      message: e.target[3].value,
+      name: name,
+      email: email,
+      organization: organization,
+      message: message,
     };
     const res: boolean = await firebase.addWaitingList(formData);
     if (res) {
@@ -69,6 +82,11 @@ const Join = ({ join_props }: JoinProps) => {
               <div className="mb-4">
                 <input
                   required
+                  name="name"
+                  value={name}
+                  onChange={(e) => {
+                    setName(e.target.value);
+                  }}
                   className="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
                   type="text"
                   placeholder={join_props.placeholderName}
@@ -77,6 +95,11 @@ const Join = ({ join_props }: JoinProps) => {
               <div className="mb-4">
                 <input
                   required
+                  name="email"
+                  value={email}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
                   className="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
                   type="email"
                   placeholder={join_props.placeholderEmail}
@@ -84,6 +107,11 @@ const Join = ({ join_props }: JoinProps) => {
               </div>
               <div className="mb-4">
                 <input
+                  name="organization"
+                  value={organization}
+                  onChange={(e) => {
+                    setOrganization(e.target.value);
+                  }}
                   className="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
                   type="text"
                   placeholder={join_props.placeholderOrg}
@@ -91,6 +119,11 @@ const Join = ({ join_props }: JoinProps) => {
               </div>
               <div className="mb-4">
                 <textarea
+                  name="message"
+                  value={message}
+                  onChange={(e) => {
+                    setMessage(e.target.value);
+                  }}
                   className="w-full h-24 p-4 text-xs font-semibold leading-none resize-none bg-blueGray-50 rounded outline-none"
                   placeholder={join_props.placeholderMessage}
                 ></textarea>
