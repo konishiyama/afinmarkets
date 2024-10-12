@@ -9,7 +9,7 @@ import { CoverProps } from "@/interfaces";
 const Cover = ({ cover_props }: CoverProps) => {
   return (
     <div
-      className="flex flex-wrap items-center -mx-3 xl:px-32 pt-16 md:pt-16 lg:pt-0 bg-cover bg-center xl:min-h-screen"
+      className="flex flex-wrap items-center -mx-3 xl:px-32 pt-16 md:pt-16 xl:pt-0 bg-cover bg-center xl:min-h-screen"
       style={{ backgroundImage: `url(${coverImage.src})` }}
     >
       <Layout backgroundColor="">
