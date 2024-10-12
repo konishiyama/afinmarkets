@@ -16,10 +16,7 @@ const HeaderMenu = ({ header_props }: HeaderProps) => {
     <ul className="lg:flex lg:items-center lg:w-auto lg:space-x-20">
       {Object.entries(header_props).map(([propId, propName]) => (
         <li key={propId} className="px-4">
-          <Link
-            href={`#${propId}`}
-            className="font-semibold text-blueGray-600 hover:text-blueGray-500"
-          >
+          <Link href={`#${propId}`} className="font-semibold">
             {propName}
           </Link>
         </li>

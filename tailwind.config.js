@@ -33,6 +33,7 @@ module.exports = {
           600: "#475569",
         },
         boxShadow: "#2337504d",
+        purple: "#873eff",
       },
     },
   },

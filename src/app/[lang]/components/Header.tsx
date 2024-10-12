@@ -12,7 +12,8 @@ import { HeaderProps } from "@/interfaces";
 
 const Header = ({ header_props, lang }: HeaderProps) => {
   const [clientWindowHeight, setClientWindowHeight] = useState<number>(0);
-  const [headerBackground, setHeaderBackground] = useState("0, 0, 0, 0");
+  const [headerBackground, setHeaderBackground] = useState("bg-transparent");
+  const [textColor, setTextColor] = useState("text-white");
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -25,22 +26,21 @@ const Header = ({ header_props, lang }: HeaderProps) => {
 
   useEffect(() => {
     if (clientWindowHeight > 35) {
-      setHeaderBackground("255, 255, 255, 255");
+      setHeaderBackground("bg-white");
+      setTextColor("text-black");
     } else {
-      setHeaderBackground("0, 0, 0, 0");
+      setHeaderBackground("bg-transparent");
+      setTextColor("text-white");
     }
   }, [clientWindowHeight]);
 
   return (
     <header
-      className="sticky top-0 z-10"
-      style={{
-        backgroundColor: `rgba(${headerBackground})`,
-      }}
+      className={`sticky top-0 z-10 !fixed top-0 inset-x-0 ${textColor} ${headerBackground}`}
     >
       <Layout backgroundColor="">
         <nav
-          className="flex justify-between items-center py-6"
+          className="flex justify-between items-center py-2"
           aria-label="Global"
         >
           <div className="lg:flex">
