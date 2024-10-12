@@ -40,7 +40,7 @@ const Header = ({ header_props, lang }: HeaderProps) => {
     >
       <Layout backgroundColor="">
         <nav
-          className="flex justify-between items-center py-2"
+          className="flex justify-between items-center py-4"
           aria-label="Global"
         >
           <div className="lg:flex">
@@ -51,10 +51,10 @@ const Header = ({ header_props, lang }: HeaderProps) => {
               <Image src={logo} alt="Afin Tech Logo" className="w-56" />
             </Link>
           </div>
-          <div className="hidden lg:flex lg:pt-2">
+          <div className="hidden lg:flex">
             <HeaderMenu header_props={header_props} />
           </div>
-          <div className="flex lg\:block lg:pt-2">
+          <div className="flex lg\:block">
             <LocaleSwitcher lang={lang} />
           </div>
         </nav>

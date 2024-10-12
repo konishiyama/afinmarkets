@@ -9,11 +9,11 @@ import { CoverProps } from "@/interfaces";
 const Cover = ({ cover_props }: CoverProps) => {
   return (
     <div
-      className="flex flex-wrap items-center -mx-3 xl:px-32 pt-8 md:pt-16 lg:pt-0 bg-cover bg-center xl:min-h-screen"
+      className="flex flex-wrap items-center -mx-3 xl:px-32 pt-16 md:pt-16 lg:pt-0 bg-cover bg-center xl:min-h-screen"
       style={{ backgroundImage: `url(${coverImage.src})` }}
     >
       <Layout backgroundColor="">
-        <div className="w-full text-white px-3">
+        <div className="w-full text-white px-4 py-4">
           <div className="max-w-lg lg:max-w-md mx-auto lg:mx-0 mb-8 text-center lg:text-left">
             <h2 className="text-3xl lg:text-5xl mb-4 font-bold font-heading wow animate__animated animate__fadeIn">
               {cover_props.headline1}
