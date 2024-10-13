@@ -50,27 +50,17 @@
     "comment": "All the team members are fully experienced in the govermental field and technology industries.",
     "members": {
       "Ko": {
-        "fullname": "Ko",
+        "fullname": "Ko Nishiyama",
         "title": "CEO",
         "description": "Ko is the former deplomat at the Ministry of Foreign Affairs of Japan. Prior to establish his own company, Shangri-la Inc., Ko has served 4 years at MOFA headquaters in Tokyo and the Japanese Embassy in China. Ko is also a self-taught full stack developper with over 4 years of professional career in the arena of machine learning and blockchain. Speaks Japanese, Korean, Chinese and English.",
-        "img_path": "konishiyama.jpg"
-      },
-      "Heein": {
-        "fullname": "Heein",
-        "title": "CTO",
-        "description": "With a strong background in mathmatics, Heein has awarded with a gold medal at Korean Mathmatical Olympiad and a silver medal at the Korean Mathmatical Competition respectively when he was in high school and in collage. After graduating the department of mathematical sciences at Seoul National University, Heein joined korean blockchain startup as a blockchain engineer and a quantum analyst.",
-        "img_path": "konishiyama.jpg"
+        "img_path": "konishiyama.jpg",
+        "facebook_path": "https://www.facebook.com/ko.nishiyama",
+        "linkedin_path": "https://www.linkedin.com/in/ko-nishiyama-51945743/"
       },
       "Woojin": {
-        "fullname": "Woojin",
-        "title": "Chief Blockchain Officer",
+        "fullname": "Woojin Kim",
+        "title": "CTO",
         "description": "Blockchain specialist with more than 10 years of professional experiences in the arena. After dropping out from the faculty of phisics at Hanyang University in Seoul, South Korea, Woojin has started his professional career as a tech specialist with 3 times of ecperiences as CTO in several startups including 2 well known blockchain startups in South Korea.",
-        "img_path": "konishiyama.jpg"
-      },
-      "Yuto": {
-        "fullname": "Yuto",
-        "title": "Chief Economist",
-        "description": "After graduating the University of Tokyo, Yuto joined the Ministry of Finance of Japan and served 4 years in Tokyo prior to leaving to the UK to beef up his speciality in the realm of Economics. After receiving the Master of Economics at the London Business School, Yuto was dispathed to the Asian Development Bank as an economist.",
         "img_path": "konishiyama.jpg"
       }
     }

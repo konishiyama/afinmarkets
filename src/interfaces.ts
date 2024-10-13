@@ -71,6 +71,8 @@ export interface Member {
   title: string;
   description: string;
   img_path: string;
+  facebook_path: string;
+  linkedin_path: string;
 }
 
 export interface Members {
