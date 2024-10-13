@@ -19,7 +19,7 @@ const Team = ({ team_props }: TeamProps) => {
             {team_props.title}
           </h2>
           <p
-            className="text-blueGray-400 leading-loose wow animate__animated animate__fadeIn"
+            className="leading-loose wow animate__animated animate__fadeIn"
             data-wow-delay=".3s"
           >
             {team_props.comment}

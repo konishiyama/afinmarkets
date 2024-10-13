@@ -62,7 +62,7 @@ const MemberItem = ({ member_props }: MemberProps) => {
             )}
           </div>
         </div>
-        <p className="leading-loose text-blueGray-400 mb-5 text-sm">
+        <p className="leading-loose text-black mb-5 text-sm">
           {member_props.description}
         </p>
       </div>
