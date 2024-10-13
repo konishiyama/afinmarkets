@@ -8,7 +8,7 @@ export default function Layout({
   backgroundColor: string;
 }) {
   return (
-    <div className={`${backgroundColor} text-black`}>
+    <div className={`${backgroundColor}`}>
       <div className="px-4 mx-auto xl:max-w-screen-xl">{children}</div>
     </div>
   );

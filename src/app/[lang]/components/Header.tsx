@@ -27,7 +27,7 @@ const Header = ({ header_props, lang }: HeaderProps) => {
   useEffect(() => {
     if (clientWindowHeight > 35) {
       setHeaderBackground("bg-white");
-      setTextColor("text-black");
+      setTextColor("text-base");
     } else {
       setHeaderBackground("bg-transparent");
       setTextColor("text-white");

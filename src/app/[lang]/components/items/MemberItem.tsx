@@ -27,7 +27,7 @@ const MemberItem = ({ member_props }: MemberProps) => {
           />
           <div className="pl-4">
             <p className="text-lg font-bold">{member_props.fullname}</p>
-            <p className="text-black">{member_props.title}</p>
+            <p className="">{member_props.title}</p>
           </div>
           <div className="ml-auto flex">
             {member_props.facebook_path && (
@@ -62,9 +62,7 @@ const MemberItem = ({ member_props }: MemberProps) => {
             )}
           </div>
         </div>
-        <p className="leading-loose text-black mb-5 text-sm">
-          {member_props.description}
-        </p>
+        <p className="leading-loose mb-5 text-sm">{member_props.description}</p>
       </div>
     </li>
   );

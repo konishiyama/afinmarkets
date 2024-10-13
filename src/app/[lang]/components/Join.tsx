@@ -70,10 +70,10 @@ const Join = ({ join_props }: JoinProps) => {
           <div className="max-w-lg mb-8 mx-auto">
             <h2 className="mb-4 text-4xl font-bold font-heading">
               {join_props.title1}
-              <span className="text-blue-500">{join_props.titleBlue}</span>
+              <span className="text-purple">{join_props.titleBlue}</span>
               {join_props.title2}
             </h2>
-            <p className="mb-8 text-blueGray-400 wow animate__animated animate__fadeIn">
+            <p className="mb-8 wow animate__animated animate__fadeIn">
               {join_props.comment}
             </p>
           </div>
@@ -130,7 +130,7 @@ const Join = ({ join_props }: JoinProps) => {
               </div>
               <div className="flex w-full items-center">
                 <button
-                  className="w-full py-4 px-8 text-sm text-white font-semibold leading-none bg-blue-500 hover:bg-blue-700 rounded"
+                  className="w-full py-4 px-8 text-sm text-white font-semibold leading-none bg-purple hover:opacity-90 rounded"
                   type="submit"
                 >
                   {join_props.submitButton}
