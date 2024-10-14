@@ -4,13 +4,13 @@ import Image from "next/image";
 import { type Locale } from "../../../i18n-config";
 import Layout from "./layouts/Layout";
 import SectionContainer from "./layouts/SectionContainer";
-import Chart from "./items/Chart";
+// import Chart from "./items/Chart";
 import productBgImage from "/public/images/pattern.png";
 import { ProductProps } from "@/interfaces";
 
 const Product = ({ product_props }: ProductProps) => {
   return (
-    <Layout backgroundColor="bg-blueGray-50">
+    <Layout backgroundColor="bg-bgPurple">
       <SectionContainer section_title="Product">
         <div className="max-w-lg mx-auto mb-12 text-center">
           <h2 className="my-3 text-3xl md:text-4xl text-blueGray font-bold font-heading wow animate__animated animate__fadeIn">
@@ -31,7 +31,7 @@ const Product = ({ product_props }: ProductProps) => {
               height: "66%",
             }}
           >
-            <Chart />
+            {/* <Chart /> */}
           </div>
         </div>
       </SectionContainer>

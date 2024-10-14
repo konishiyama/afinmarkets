@@ -37,6 +37,7 @@ module.exports = {
         boxShadow: "#2337504d",
         purple: "#873eff",
         palePurple: "#b381ff",
+        bgPurple: "#F0F3FD",
       },
     },
   },
