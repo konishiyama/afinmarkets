@@ -5,7 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { type Locale } from "../../../i18n-config";
 import LocaleSwitcher from "./items/LocaleSwitcher";
-import logo from "/public/images/20240414_logo.png";
+import logo_text_white from "/public/images/20241106_logo_white.png";
+import logo_text_base from "/public/images/20241106_logo_base.png";
 import HeaderMenu from "./items/HeaderMenu";
 import Layout from "./layouts/Layout";
 import { HeaderProps } from "@/interfaces";
@@ -14,6 +15,7 @@ const Header = ({ header_props, lang }: HeaderProps) => {
   const [clientWindowHeight, setClientWindowHeight] = useState<number>(0);
   const [headerBackground, setHeaderBackground] = useState("bg-transparent");
   const [textColor, setTextColor] = useState("text-white");
+  const [logo, setLogo] = useState(logo_text_white);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -26,9 +28,11 @@ const Header = ({ header_props, lang }: HeaderProps) => {
 
   useEffect(() => {
     if (clientWindowHeight > 35) {
+      setLogo(logo_text_base);
       setHeaderBackground("bg-white");
       setTextColor("text-base");
     } else {
+      setLogo(logo_text_white);
       setHeaderBackground("bg-transparent");
       setTextColor("text-white");
     }

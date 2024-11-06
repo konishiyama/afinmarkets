@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { type Locale } from "../../../i18n-config";
-import logo from "/public/images/20240414_logo.png";
+import logo from "/public/images/20241106_logo_white.png";
 import Layout from "./layouts/Layout";
 import { FooterProps } from "@/interfaces";
 
