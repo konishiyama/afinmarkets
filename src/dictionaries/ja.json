@@ -6,21 +6,20 @@
     "Join": "コンタクト"
   },
   "cover_props": {
-    "headline1": "Exclusive Agency For",
-    "headline2": " Technology ",
-    "headline3": "Provide Solution",
-    "comment1": "We are",
-    "comment2": " Monst",
-    "comment3": ", a Creative Design",
-    "comment4": "Helping you maximize operations management with digitization",
-    "button1": "Key Features",
-    "button2": "Who We Are?"
+    "headline1": "",
+    "headline2": " 365日24時間 ",
+    "headline3": "取引可能　FXマーケット",
+    "comment1": "Afinマーケットは",
+    "comment2": " 週末でも制限のない取引が可能な ",
+    "comment3": "FXマーケットです",
+    "comment4": "自由なリスクヘッジを、そして途切れのない投資機会を皆様に",
+    "button1": "登録はこちら",
+    "button2": "運営陣紹介"
   },
   "product_props": {
-    "Product": "概要",
-    "Features": "特徴",
-    "Team": "チーム",
-    "JoinUs": "コンタクト"
+    "title": "24時間365日運営FXマーケット、使いやすさ、そのままに",
+    "comment1": "ブロックチェーン技術を通じ、24時間365日の取引を実現。",
+    "comment2": "従来のUI/UXをできる限り踏襲、使いやすさそのまま、投資を始められます。"
   },
   "features_props": {
     "headline1": "We are ",
@@ -30,24 +29,24 @@
     "feature_cards_props": {
       "1": {
         "img_path": "Currency-rafiki.svg",
-        "title": "Project Initialization",
-        "comment": "Project initiation ensures that you lay a strong foundation for a new project in your company our team."
+        "title": "24時間/365日取引可能",
+        "comment": "これまでのFX取引では、どれだけ重要なイベントが発生しても、週末に取引を行うことができませんでした。Afin Technologiesは、週末のFX取引を開放することで、より柔軟なリスクヘッジと、より多くの取引機会を提供します。"
       },
       "2": {
         "img_path": "Currency-rafiki.svg",
-        "title": "Project planning",
-        "comment": "A project plan is essential to keep everything related to the project organized, methodical, and on track."
+        "title": "使いやすさはそのままに",
+        "comment": "MT4・5や、大手取引所の慣れ親しんだUI/UXを取り入れ、使いやすさにこだわり、他マーケットからの移行される場合でも、すぐに慣れていただけるように工夫しました。もちろん、各種テクニカル指標も、利用が可能です。"
       },
       "3": {
         "img_path": "Currency-rafiki.svg",
-        "title": "Project planning",
-        "comment": "A project plan is essential to keep everything related to the project organized, methodical, and on track."
+        "title": "自由なAPI提供",
+        "comment": "多くのFX取引所では、APIを利用したアルゴリズムトレーディングに制限がかけられていることがほとんどです。我々のプラットフォームでは、取引額等の制限なく、自由にREST APIを利用できるようにしました。"
       }
     }
   },
   "team_props": {
     "title": "Our Management Team",
-    "comment": "Afin Technologiesは、政府機関、テック業界等、関連する全ての経験、ナレッジを持ち合わせたメンバーによって運営されています。",
+    "comment": "Afin Technologiesは、政府機関、テック業界等、関連するあらゆる経験、ナレッジを持ち合わせたメンバーによって運営されています。",
     "members": {
       "Ko": {
         "fullname": "西山 洸",
@@ -58,10 +57,12 @@
         "linkedin_path": "https://www.linkedin.com/in/ko-nishiyama-51945743/"
       },
       "Woojin": {
-        "fullname": "Woojin",
+        "fullname": "Woojin Lim",
         "title": "CTO",
         "description": "韓国・漢陽大学を中退後、独学エンジニアとしてのキャリアを開始。ブロックチェーン黎明期には単独で仮想通貨交換所の開発に従事するなど、これまで10年以上にわたり、ブロックチェーン業界にて多種多様な経験を積んだほか、複数のスタートアップにてCTOとしても勤務。",
-        "img_path": "konishiyama.jpg"
+        "img_path": "konishiyama.jpg",
+        "facebook_path": "",
+        "linkedin_path": ""
       }
     }
   },
@@ -83,7 +84,7 @@
     "errorModalButton": "閉じる"
   },
   "footer_props": {
-    "address": "東京都渋谷区渋谷3丁目5−16",
+    "address": "東京都渋谷区神宮前六丁目23番4号 桑野ビル2階",
     "phone": "+81 50 5534 1696",
     "email": "info@afintech.io"
   }

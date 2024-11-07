@@ -1,67 +1,68 @@
 {
   "header_props": {
-    "Product": "Product",
+    "Product": "Overview",
     "Features": "Features",
     "Team": "Team",
-    "Join": "Join"
+    "Join": "Contact"
   },
   "cover_props": {
-    "headline1": "Exclusive Agency For",
-    "headline2": " Technology ",
-    "headline3": "Provide Solution",
-    "comment1": "We are",
-    "comment2": " Monst",
-    "comment3": ", a Creative Design",
-    "comment4": "Helping you maximize operations management with digitization",
-    "button1": "Sign Up",
-    "button2": "Who We Are?"
+    "headline1": "World's first",
+    "headline2": "24/7 Tradeable",
+    "headline3": "FX Market",
+    "comment1": "Afin Technologies provides",
+    "comment2": " an FX market that allows unrestricted trading even on weekends.",
+    "comment3": " Enjoy more flexible risk hedging and continuous investment opportunities on our platform",
+    "comment4": "",
+    "button1": "Register Here",
+    "button2": "Meet the Team"
   },
   "product_props": {
-    "Product": "概要",
-    "Features": "特徴",
-    "Team": "チーム",
-    "JoinUs": "コンタクト"
+    "title": "24/7 FX Market with Unmatched Usability",
+    "comment1": "Through blockchain technology, we enable 24/7 trading.",
+    "comment2": "We maintain the familiar UI/UX for easy use, so you can start investing immediately."
   },
   "features_props": {
-    "headline1": "We are ",
-    "headline2": "awesome team",
+    "headline1": "We are",
+    "headline2": "an awesome team",
     "headline3": "for your business dream",
     "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis. Quisque vitae nulla malesuada, auctor arcu vitae, luctus nisi. Sed elementum vitae ligula id imperdiet.",
     "feature_cards_props": {
       "1": {
         "img_path": "Currency-rafiki.svg",
-        "title": "Project Initialization",
-        "comment": "Project initiation ensures that you lay a strong foundation for a new project in your company our team."
+        "title": "Trade 24/7",
+        "comment": "In traditional FX trading, you couldn't trade on weekends even if important events occurred. Afin Technologies opens up weekend FX trading, offering more flexible risk hedging and increased trading opportunities."
       },
       "2": {
         "img_path": "Currency-rafiki.svg",
-        "title": "Project planning",
-        "comment": "A project plan is essential to keep everything related to the project organized, methodical, and on track."
+        "title": "Ease of Use",
+        "comment": "We've incorporated the familiar UI/UX of MT4/MT5, and other major exchanges, making it easy for users a smooth transition from other trading platforms. Of course, various technical indicators are available for use."
       },
       "3": {
         "img_path": "Currency-rafiki.svg",
-        "title": "Project planning",
-        "comment": "A project plan is essential to keep everything related to the project organized, methodical, and on track."
+        "title": "Flexible API Access",
+        "comment": "Most FX exchanges impose restrictions on algorithmic trading with APIs. Our platform allows unrestricted REST API use without limitations on trading volume."
       }
     }
   },
   "team_props": {
     "title": "Our Management Team",
-    "comment": "All the team members are fully experienced in the govermental field and technology industries.",
+    "comment": "All team members are highly experienced in government and technology industries.",
     "members": {
       "Ko": {
         "fullname": "Ko Nishiyama",
         "title": "CEO",
-        "description": "Ko is the former deplomat at the Ministry of Foreign Affairs of Japan. Prior to establish his own company, Shangri-la Inc., Ko has served 4 years at MOFA headquaters in Tokyo and the Japanese Embassy in China. Ko is also a self-taught full stack developper with over 4 years of professional career in the arena of machine learning and blockchain. Speaks Japanese, Korean, Chinese and English.",
+        "description": "Ko is a former diplomat with the Ministry of Foreign Affairs of Japan. Before establishing his own company, Shangri-la Inc., Ko served for four years at MOFA headquarters in Tokyo and at the Japanese Embassy in China. He is also a self-taught full-stack developer with over four years of professional experience in machine learning and blockchain. He speaks Japanese, Korean, Chinese, and English.",
         "img_path": "konishiyama.jpg",
         "facebook_path": "https://www.facebook.com/ko.nishiyama",
         "linkedin_path": "https://www.linkedin.com/in/ko-nishiyama-51945743/"
       },
       "Woojin": {
-        "fullname": "Woojin Kim",
+        "fullname": "Woojin Lim",
         "title": "CTO",
-        "description": "Blockchain specialist with more than 10 years of professional experiences in the arena. After dropping out from the faculty of phisics at Hanyang University in Seoul, South Korea, Woojin has started his professional career as a tech specialist with 3 times of ecperiences as CTO in several startups including 2 well known blockchain startups in South Korea.",
-        "img_path": "konishiyama.jpg"
+        "description": "Blockchain specialist with over 10 years of professional experience in the field. After leaving the faculty of physics at Hanyang University in Seoul, South Korea, Woojin began his career as a technology specialist. He has held the position of CTO three times at various startups, including two prominent blockchain companies in South Korea.",
+        "img_path": "konishiyama.jpg",
+        "facebook_path": "",
+        "linkedin_path": ""
       }
     }
   },
@@ -83,7 +84,7 @@
     "errorModalButton": "Try it again"
   },
   "footer_props": {
-    "address": "3-5-16, Shibuya, Shibuya-ward, Tokyo, Japan",
+    "address": "Kuwano Building 2F, 6-23-4, Jingumae, Shibuya, Tokyo",
     "phone": "+81 50 5534 1696",
     "email": "info@afintech.io"
   }

@@ -19,14 +19,14 @@ const FeatureCard = ({ feature_props, featureId }: FeatureProps) => {
       data-wow-delay=".3s"
     >
       <div className="p-12 bg-white shadow rounded">
-        <div className="flex w-12 h-12 mx-auto items-center justify-center text-blue-800 font-bold font-heading bg-blue-200 rounded-full">
+        <div className="mb-4 flex w-12 h-12 mx-auto items-center justify-center text-white font-bold font-heading bg-palePurple rounded-full">
           {featureId}
         </div>
-        <Image className="h-36 mx-auto my-4" src={image} alt="Monst" />
-        <h3 className="mb-2 font-bold font-heading text-xl">
+        {/* <Image className="h-36 mx-auto my-4" src={image} alt="Monst" /> */}
+        <h3 className="mb-4 font-bold font-heading text-xl">
           {feature_props.title}
         </h3>
-        <p className="text-sm text-blueGray-400 leading-relaxed">
+        <p className="md:min-h-40 text-sm text-blueGray-400 leading-relaxed">
           {feature_props.comment}
         </p>
       </div>

@@ -15,7 +15,7 @@ const LocaleSwitcher = ({ lang }: HeaderProps) => {
   return (
     <>
       <Menu as="div" className="relative inline-block text-left">
-        <Menu.Button className="items-center font-semibold inline-flex w-full justify-center px-4 py-2">
+        <Menu.Button className="items-center font-semibold inline-flex w-full justify-center py-2">
           <GlobeAltIcon className="h-5 w-5" aria-hidden="true" />
           <ChevronDownIcon className="ml-1 h-5 w-5" aria-hidden="true" />
         </Menu.Button>

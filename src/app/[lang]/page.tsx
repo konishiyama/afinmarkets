@@ -22,7 +22,7 @@ export default async function IndexPage({
       <Product product_props={dictionary.product_props} />
       <Features features_props={dictionary.features_props} />
       <Team team_props={dictionary.team_props} />
-      <Join join_props={dictionary.join_props} />
+      <Join join_props={dictionary.join_props} lang={lang} />
       <Footer footer_props={dictionary.footer_props} lang={lang} />
     </main>
   );

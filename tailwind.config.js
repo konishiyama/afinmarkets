@@ -38,6 +38,7 @@ module.exports = {
         purple: "#873eff",
         palePurple: "#b381ff",
         bgPurple: "#F0F3FD",
+        bgGray: "#F8F9FD",
       },
     },
   },

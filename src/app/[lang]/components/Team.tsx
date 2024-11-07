@@ -9,7 +9,7 @@ import { TeamProps } from "../../../interfaces";
 
 const Team = ({ team_props }: TeamProps) => {
   return (
-    <Layout backgroundColor="bg-bgPurple">
+    <Layout backgroundColor="bg-bgGray">
       <SectionContainer section_title="Team">
         <div className="max-w-lg mx-auto mb-12 text-center">
           <h2

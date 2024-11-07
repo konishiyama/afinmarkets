@@ -9,12 +9,12 @@ import { CoverProps } from "@/interfaces";
 const Cover = ({ cover_props }: CoverProps) => {
   return (
     <div
-      className="flex flex-wrap items-center -mx-3 xl:px-32 pt-16 md:pt-16 xl:pt-0 bg-cover bg-center xl:min-h-screen"
+      className="flex flex-wrap items-center -mx-3 xl:px-32 pt-16 md:min-h-2xl md:py-32 xl:pt-0 bg-cover bg-center xl:min-h-screen"
       style={{ backgroundImage: `url(${coverImage.src})` }}
     >
       <Layout backgroundColor="">
         <div className="w-full text-white px-4 py-4">
-          <div className="max-w-lg lg:max-w-md mx-auto lg:mx-0 mb-8 text-center lg:text-left">
+          <div className="max-w-lg lg:max-w-md mx-auto lg:mx-0 mb-8 text-center md:text-left">
             <h2 className="text-3xl lg:text-5xl mb-4 font-bold font-heading wow animate__animated animate__fadeIn">
               {cover_props.headline1}
               <span className="text-purple">{cover_props.headline2}</span>
@@ -25,11 +25,11 @@ const Cover = ({ cover_props }: CoverProps) => {
               <strong className="text-purple">{cover_props.comment2}</strong>
               {cover_props.comment3}
             </div>
-            <p className="leading-relaxed wow animate__animated animate__fadeIn mt-3 text-sm">
+            <p className="leading-relaxed wow animate__animated animate__fadeIn mt-3">
               {cover_props.comment4}
             </p>
           </div>
-          <div className="text-center lg:text-left">
+          <div className="text-center md:text-left">
             <Link
               className="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-center font-semibold leading-none bg-purple hover:opacity-90 rounded wow animate__animated animate__fadeIn"
               href="#Join"

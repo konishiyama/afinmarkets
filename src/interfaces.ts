@@ -29,10 +29,9 @@ export interface CoverProps {
 // Product interfaces
 export interface ProductProps {
   product_props: {
-    Product: string;
-    Features: string;
-    Team: string;
-    JoinUs: string;
+    title: string;
+    comment1: string;
+    comment2: string;
   };
 }
 
@@ -66,6 +65,10 @@ export interface TeamProps {
   };
 }
 
+export interface Members {
+  [key: string]: Member;
+}
+
 export interface Member {
   fullname: string;
   title: string;
@@ -73,10 +76,6 @@ export interface Member {
   img_path: string;
   facebook_path: string;
   linkedin_path: string;
-}
-
-export interface Members {
-  [key: string]: Member;
 }
 
 // Join interfaces
@@ -105,6 +104,7 @@ export interface JoinProps {
     successfulModalButton: string;
     errorModalButton: string;
   };
+  lang: Locale;
 }
 
 // Footer interfaces

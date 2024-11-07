@@ -9,7 +9,7 @@ import { Fragment, useState } from "react";
 import { JoinProps } from "@/interfaces";
 import { useRouter } from "next/navigation";
 
-const Join = ({ join_props }: JoinProps) => {
+const Join = ({ join_props, lang }: JoinProps) => {
   const firebase = getFirebaseInstance();
   const router = useRouter();
 
@@ -34,7 +34,7 @@ const Join = ({ join_props }: JoinProps) => {
     setEmail("");
     setOrganization("");
     setMessage("");
-    router.push("/");
+    router.push(`/${lang}`);
   }
 
   // form data handling reference
@@ -66,7 +66,7 @@ const Join = ({ join_props }: JoinProps) => {
   return (
     <Layout backgroundColor="bg-white">
       <SectionContainer section_title="Join">
-        <div className="max-w-2xl mx-auto text-center">
+        <div className="w-full mx-auto text-center">
           <div className="max-w-lg mb-8 mx-auto">
             <h2 className="mb-4 text-4xl font-bold font-heading">
               {join_props.title1}
@@ -87,7 +87,7 @@ const Join = ({ join_props }: JoinProps) => {
                   onChange={(e) => {
                     setName(e.target.value);
                   }}
-                  className="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
+                  className="w-full p-4 text-xs font-semibold leading-none bg-bgGray rounded outline-none"
                   type="text"
                   placeholder={join_props.placeholderName}
                 ></input>
@@ -100,7 +100,7 @@ const Join = ({ join_props }: JoinProps) => {
                   onChange={(e) => {
                     setEmail(e.target.value);
                   }}
-                  className="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
+                  className="w-full p-4 text-xs font-semibold leading-none bg-bgGray rounded outline-none"
                   type="email"
                   placeholder={join_props.placeholderEmail}
                 ></input>
@@ -112,7 +112,7 @@ const Join = ({ join_props }: JoinProps) => {
                   onChange={(e) => {
                     setOrganization(e.target.value);
                   }}
-                  className="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
+                  className="w-full p-4 text-xs font-semibold leading-none bg-bgGray rounded outline-none"
                   type="text"
                   placeholder={join_props.placeholderOrg}
                 ></input>
@@ -124,7 +124,7 @@ const Join = ({ join_props }: JoinProps) => {
                   onChange={(e) => {
                     setMessage(e.target.value);
                   }}
-                  className="w-full h-24 p-4 text-xs font-semibold leading-none resize-none bg-blueGray-50 rounded outline-none"
+                  className="w-full h-24 p-4 text-xs font-semibold leading-none resize-none bg-bgGray rounded outline-none"
                   placeholder={join_props.placeholderMessage}
                 ></textarea>
               </div>
