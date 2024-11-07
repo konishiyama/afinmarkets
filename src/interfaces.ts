@@ -83,7 +83,6 @@ export interface FormData {
   name: string;
   email: string;
   country: string;
-  // organization: string;
   message: string;
   language: Locale;
 }
@@ -97,7 +96,6 @@ export interface JoinProps {
     placeholderName: string;
     placeholderEmail: string;
     placeholderCountry: string;
-    placeholderOrg: string;
     placeholderMessage: string;
     submitButton: string;
     successfulModalTitle: string;

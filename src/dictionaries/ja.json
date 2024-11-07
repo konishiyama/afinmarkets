@@ -74,7 +74,6 @@
     "placeholderName": "お名前（必須項目）",
     "placeholderEmail": "Emailアドレス（必須項目）",
     "placeholderCountry": "地域（選択項目）",
-    "placeholderOrg": "ご所属（選択項目）",
     "placeholderMessage": "メッセージ（選択項目）",
     "submitButton": "登録する",
     "successfulModalTitle": "登録成功",

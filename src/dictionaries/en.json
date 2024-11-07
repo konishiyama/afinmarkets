@@ -74,7 +74,6 @@
     "placeholderName": "Name**",
     "placeholderEmail": "Email**",
     "placeholderCountry": "Your country *If any",
-    "placeholderOrg": "Organization *If any",
     "placeholderMessage": "Message *If any",
     "submitButton": "Sign Up",
     "successfulModalTitle": "Sign up successful!",

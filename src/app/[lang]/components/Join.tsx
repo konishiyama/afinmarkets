@@ -16,7 +16,6 @@ const Join = ({ join_props, lang }: JoinProps) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [country, setCountry] = useState("");
-  // const [organization, setOrganization] = useState("");
   const [message, setMessage] = useState("");
 
   const [modalTitle, setModalTitle] = useState(join_props.successfulModalTitle);
@@ -34,7 +33,6 @@ const Join = ({ join_props, lang }: JoinProps) => {
     setName("");
     setEmail("");
     setCountry("");
-    // setOrganization("");
     setMessage("");
     router.push(`/${lang}`);
   }
@@ -47,7 +45,6 @@ const Join = ({ join_props, lang }: JoinProps) => {
       name: name,
       email: email,
       country: country,
-      // organization: organization,
       message: message,
       language: lang,
     };
@@ -121,18 +118,6 @@ const Join = ({ join_props, lang }: JoinProps) => {
                   placeholder={join_props.placeholderCountry}
                 ></input>
               </div>
-              {/* <div className="mb-4">
-                <input
-                  name="organization"
-                  value={organization}
-                  onChange={(e) => {
-                    setOrganization(e.target.value);
-                  }}
-                  className="w-full p-4 text-xs font-semibold leading-none bg-bgGray rounded outline-none"
-                  type="text"
-                  placeholder={join_props.placeholderOrg}
-                ></input>
-              </div> */}
               <div className="mb-4">
                 <textarea
                   name="message"

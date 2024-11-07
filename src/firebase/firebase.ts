@@ -25,7 +25,6 @@ class Firebase {
       name: formData.name,
       email: formData.email,
       country: formData.country,
-      // organization: formData.organization,
       message: formData.message,
       language: formData.language,
       sentAt: Timestamp.now().toDate(),
