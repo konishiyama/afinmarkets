@@ -82,8 +82,10 @@ export interface Member {
 export interface FormData {
   name: string;
   email: string;
-  organization: string;
+  country: string;
+  // organization: string;
   message: string;
+  language: Locale;
 }
 
 export interface JoinProps {
@@ -94,6 +96,7 @@ export interface JoinProps {
     comment: string;
     placeholderName: string;
     placeholderEmail: string;
+    placeholderCountry: string;
     placeholderOrg: string;
     placeholderMessage: string;
     submitButton: string;

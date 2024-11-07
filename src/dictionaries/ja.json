@@ -73,6 +73,7 @@
     "comment": "サービスの正式な開始時期や、重要なお知らせについて、ご登録のメールアドレスにご案内いたします。※別途お問い合わせ内容がある場合はメッセージにご記入ください。",
     "placeholderName": "お名前（必須項目）",
     "placeholderEmail": "Emailアドレス（必須項目）",
+    "placeholderCountry": "地域（選択項目）",
     "placeholderOrg": "ご所属（選択項目）",
     "placeholderMessage": "メッセージ（選択項目）",
     "submitButton": "登録する",

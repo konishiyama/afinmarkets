@@ -15,7 +15,8 @@ const Join = ({ join_props, lang }: JoinProps) => {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [organization, setOrganization] = useState("");
+  const [country, setCountry] = useState("");
+  // const [organization, setOrganization] = useState("");
   const [message, setMessage] = useState("");
 
   const [modalTitle, setModalTitle] = useState(join_props.successfulModalTitle);
@@ -32,7 +33,8 @@ const Join = ({ join_props, lang }: JoinProps) => {
     setModalOpen(false);
     setName("");
     setEmail("");
-    setOrganization("");
+    setCountry("");
+    // setOrganization("");
     setMessage("");
     router.push(`/${lang}`);
   }
@@ -44,8 +46,10 @@ const Join = ({ join_props, lang }: JoinProps) => {
     const formData: FormData = {
       name: name,
       email: email,
-      organization: organization,
+      country: country,
+      // organization: organization,
       message: message,
+      language: lang,
     };
     const res: boolean = await firebase.addWaitingList(formData);
     if (res) {
@@ -107,6 +111,18 @@ const Join = ({ join_props, lang }: JoinProps) => {
               </div>
               <div className="mb-4">
                 <input
+                  name="country"
+                  value={country}
+                  onChange={(e) => {
+                    setCountry(e.target.value);
+                  }}
+                  className="w-full p-4 text-xs font-semibold leading-none bg-bgGray rounded outline-none"
+                  type="text"
+                  placeholder={join_props.placeholderCountry}
+                ></input>
+              </div>
+              {/* <div className="mb-4">
+                <input
                   name="organization"
                   value={organization}
                   onChange={(e) => {
@@ -116,7 +132,7 @@ const Join = ({ join_props, lang }: JoinProps) => {
                   type="text"
                   placeholder={join_props.placeholderOrg}
                 ></input>
-              </div>
+              </div> */}
               <div className="mb-4">
                 <textarea
                   name="message"
@@ -128,6 +144,14 @@ const Join = ({ join_props, lang }: JoinProps) => {
                   placeholder={join_props.placeholderMessage}
                 ></textarea>
               </div>
+              {/* for user's language specification*/}
+              <input
+                name="lang"
+                value={lang}
+                className=""
+                hidden
+                type="text"
+              ></input>
               <div className="flex w-full items-center">
                 <button
                   className="w-full py-4 px-8 text-sm text-white font-semibold leading-none bg-purple hover:opacity-90 rounded"

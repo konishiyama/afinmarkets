@@ -24,8 +24,10 @@ class Firebase {
     let dataToAdd = {
       name: formData.name,
       email: formData.email,
-      organization: formData.organization,
+      country: formData.country,
+      // organization: formData.organization,
       message: formData.message,
+      language: formData.language,
       sentAt: Timestamp.now().toDate(),
     };
     let docRef = collection(this.db, "waitingList");

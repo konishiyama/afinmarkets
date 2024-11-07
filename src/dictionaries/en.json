@@ -73,6 +73,7 @@
     "comment": "You will be informed the official launch of our service and important notices! *You can also add some messages for any inquiries.",
     "placeholderName": "Name**",
     "placeholderEmail": "Email**",
+    "placeholderCountry": "Your country *If any",
     "placeholderOrg": "Organization *If any",
     "placeholderMessage": "Message *If any",
     "submitButton": "Sign Up",
