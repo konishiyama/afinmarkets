@@ -11,7 +11,6 @@ interface MemberProps {
 }
 
 const MemberItem = ({ memberId, member_props }: MemberProps) => {
-  console.log(memberId);
   const customClassName =
     memberId === "0" ? "md:pl-0 md:pr-2" : "md:pl-2 md:pr-0";
 

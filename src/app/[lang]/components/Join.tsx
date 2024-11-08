@@ -11,7 +11,6 @@ import { useRouter } from "next/navigation";
 
 const Join = ({ join_props, lang }: JoinProps) => {
   const firebase = getFirebaseInstance();
-  console.log(firebase);
   const router = useRouter();
 
   const [name, setName] = useState("");
