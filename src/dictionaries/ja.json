@@ -27,17 +27,14 @@
     "headline3": "for your business dream",
     "feature_cards_props": {
       "1": {
-        "img_path": "Currency-rafiki.svg",
         "title": "24時間/365日取引可能",
         "comment": "これまでのFX取引では、どれだけ重要なイベントが発生しても、週末に取引を行うことができませんでした。Afin Technologiesは、週末のFX取引を開放することで、より柔軟なリスクヘッジと、より多くの取引機会を提供します。"
       },
       "2": {
-        "img_path": "Currency-rafiki.svg",
         "title": "使いやすさはそのまま",
         "comment": "MT4・5や、大手取引所の慣れ親しんだUI/UXを取り入れ、使いやすさにこだわり、他マーケットからの移行される場合でも、すぐに慣れていただけるように工夫しました。もちろん、各種テクニカル指標も、利用が可能です。"
       },
       "3": {
-        "img_path": "Currency-rafiki.svg",
         "title": "自由なAPI提供",
         "comment": "多くのFX取引所では、APIを利用したアルゴリズムトレーディングに制限がかけられていることがほとんどです。我々のプラットフォームでは、取引額等の制限なく、自由にREST APIを利用できるようにしました。"
       }

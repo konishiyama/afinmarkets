@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import coverImageSvg from "/public/images/Currency-rafiki.svg";
 import { CardItem } from "../../../../interfaces";
 
 interface FeatureProps {
@@ -11,8 +10,6 @@ interface FeatureProps {
 }
 
 const FeatureCard = ({ feature_props, featureId }: FeatureProps) => {
-  const image = require(`/public/images/${feature_props.img_path}`).default;
-
   return (
     <li
       className="hover-up-5 w-full md:w-1/2 lg:w-1/3 px-3 mb-6 wow animate__animated animate__fadeIn"

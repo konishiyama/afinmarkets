@@ -6,7 +6,7 @@ import Layout from "./layouts/Layout";
 import SectionContainer from "./layouts/SectionContainer";
 // import Chart from "./items/Chart";
 import productBgImage from "/public/images/pattern.png";
-import tradeViewImage from "/public/images/tradeview1.png";
+import tradeViewImage from "/public/images/tradeview.png";
 import { ProductProps } from "@/interfaces";
 
 const Product = ({ product_props }: ProductProps) => {

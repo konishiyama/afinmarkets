@@ -48,7 +48,6 @@ export interface FeaturesProps {
 export interface CardItem {
   title: string;
   comment: string;
-  img_path: string;
 }
 
 export interface Cards {

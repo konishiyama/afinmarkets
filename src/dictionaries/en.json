@@ -27,17 +27,14 @@
     "headline3": "for your business dream",
     "feature_cards_props": {
       "1": {
-        "img_path": "Currency-rafiki.svg",
         "title": "Trade 24/7",
         "comment": "In traditional FX trading, you couldn't trade on weekends even if important events occurred. Afin Technologies opens up weekend FX trading, offering more flexible risk hedging and increased trading opportunities."
       },
       "2": {
-        "img_path": "Currency-rafiki.svg",
         "title": "Ease of Use",
         "comment": "We've incorporated the familiar UI/UX of MT4/MT5, and other major exchanges, making it easy for users a smooth transition from other trading platforms. Of course, various technical indicators are available for use."
       },
       "3": {
-        "img_path": "Currency-rafiki.svg",
         "title": "Flexible API Access",
         "comment": "Most FX exchanges impose restrictions on algorithmic trading with APIs. Our platform allows unrestricted developper friendly REST API use without limitations such as minimum trading volume."
       }
