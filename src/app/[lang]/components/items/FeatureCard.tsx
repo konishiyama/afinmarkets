@@ -26,7 +26,7 @@ const FeatureCard = ({ feature_props, featureId }: FeatureProps) => {
         <h3 className="mb-4 font-bold font-heading text-xl">
           {feature_props.title}
         </h3>
-        <p className="md:min-h-40 text-sm text-blueGray-400 leading-relaxed">
+        <p className="md:h-44 text-sm text-base leading-relaxed">
           {feature_props.comment}
         </p>
       </div>

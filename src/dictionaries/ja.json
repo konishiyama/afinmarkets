@@ -25,7 +25,6 @@
     "headline1": "We are ",
     "headline2": "awesome team",
     "headline3": "for your business dream",
-    "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis. Quisque vitae nulla malesuada, auctor arcu vitae, luctus nisi. Sed elementum vitae ligula id imperdiet.",
     "feature_cards_props": {
       "1": {
         "img_path": "Currency-rafiki.svg",
@@ -34,7 +33,7 @@
       },
       "2": {
         "img_path": "Currency-rafiki.svg",
-        "title": "使いやすさはそのままに",
+        "title": "使いやすさはそのまま",
         "comment": "MT4・5や、大手取引所の慣れ親しんだUI/UXを取り入れ、使いやすさにこだわり、他マーケットからの移行される場合でも、すぐに慣れていただけるように工夫しました。もちろん、各種テクニカル指標も、利用が可能です。"
       },
       "3": {

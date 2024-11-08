@@ -14,13 +14,13 @@ const Product = ({ product_props }: ProductProps) => {
     <Layout backgroundColor="bg-bgGray">
       <SectionContainer section_title="Product">
         <div className="max-w-lg mx-auto mb-12 text-center">
-          <h2 className="my-3 text-3xl md:text-4xl text-blueGray font-bold font-heading wow animate__animated animate__fadeIn">
+          <h2 className="my-3 text-3xl md:text-4xl text-base font-bold font-heading wow animate__animated animate__fadeIn">
             {product_props.title}
           </h2>
-          <p className="text-blueGray wow animate__animated animate__fadeIn">
+          <p className="text-base wow animate__animated animate__fadeIn">
             {product_props.comment1}
           </p>
-          <p className="text-blueGray wow animate__animated animate__fadeIn">
+          <p className="text-base wow animate__animated animate__fadeIn">
             {product_props.comment2}
           </p>
         </div>

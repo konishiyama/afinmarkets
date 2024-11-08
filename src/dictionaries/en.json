@@ -6,7 +6,7 @@
     "Join": "Contact"
   },
   "cover_props": {
-    "headline1": "World's first",
+    "headline1": "World's first ",
     "headline2": "24/7 Tradeable",
     "headline3": " Forex Market",
     "comment1": "Afin Technologies provides",
@@ -25,7 +25,6 @@
     "headline1": "We are",
     "headline2": "an awesome team",
     "headline3": "for your business dream",
-    "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis. Quisque vitae nulla malesuada, auctor arcu vitae, luctus nisi. Sed elementum vitae ligula id imperdiet.",
     "feature_cards_props": {
       "1": {
         "img_path": "Currency-rafiki.svg",
@@ -40,7 +39,7 @@
       "3": {
         "img_path": "Currency-rafiki.svg",
         "title": "Flexible API Access",
-        "comment": "Most FX exchanges impose restrictions on algorithmic trading with APIs. Our platform allows unrestricted REST API use without limitations on trading volume."
+        "comment": "Most FX exchanges impose restrictions on algorithmic trading with APIs. Our platform allows unrestricted developper friendly REST API use without limitations such as minimum trading volume."
       }
     }
   },
