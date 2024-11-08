@@ -9,13 +9,7 @@ import { FooterProps } from "@/interfaces";
 
 const Footer = ({ footer_props, lang }: FooterProps) => {
   return (
-    <footer
-      className="py-20 text-white"
-      style={{
-        background:
-          "radial-gradient(55.13% 55.13% at 57.21% 77.99%, #291d76 0, #050505 100%), linear-gradient(0deg, #fefcfb, #fefcfb);",
-      }}
-    >
+    <footer className="py-20 text-white bg-custom-gradient">
       <Layout backgroundColor="">
         <div
           className="container px-4 mx-auto wow animate__animated animate__fadeIn"

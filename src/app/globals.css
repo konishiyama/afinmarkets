@@ -30,6 +30,15 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.bg-custom-gradient {
+  background: radial-gradient(
+      55.13% 55.13% at 57.21% 77.99%,
+      #291d76 0%,
+      #050505 100%
+    ),
+    linear-gradient(0deg, #fefcfb, #fefcfb);
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
