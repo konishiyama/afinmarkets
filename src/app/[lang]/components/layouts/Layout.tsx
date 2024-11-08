@@ -9,7 +9,7 @@ export default function Layout({
 }) {
   return (
     <div className={`${backgroundColor}`}>
-      <div className="px-8 mx-auto xl:max-w-screen-xl">{children}</div>
+      <div className="px-8 lg:px-16 mx-auto xl:max-w-screen-xl">{children}</div>
     </div>
   );
 }

@@ -40,29 +40,29 @@ const Header = ({ header_props, lang }: HeaderProps) => {
 
   return (
     <header
-      className={`sticky top-0 z-10 !fixed top-0 inset-x-0 ${textColor} ${headerBackground}`}
+      className={`px-8 lg:px-16 xl:px-32 sticky top-0 z-10 !fixed top-0 inset-x-0 ${textColor} ${headerBackground}`}
     >
-      <Layout backgroundColor="">
-        <nav
-          className="flex justify-between items-center py-4"
-          aria-label="Global"
-        >
-          <div className="lg:flex">
-            <Link
-              href={`/${lang}`}
-              className="text-sm text-base font-semibold leading-6 "
-            >
-              <Image src={logo} alt="Afin Tech Logo" className="w-56" />
-            </Link>
-          </div>
-          <div className="hidden lg:flex">
-            <HeaderMenu header_props={header_props} />
-          </div>
-          <div className="flex lg\:block">
-            <LocaleSwitcher lang={lang} />
-          </div>
-        </nav>
-      </Layout>
+      {/* <Layout backgroundColor=""> */}
+      <nav
+        className="flex justify-between items-center py-4"
+        aria-label="Global"
+      >
+        <div className="lg:flex">
+          <Link
+            href={`/${lang}`}
+            className="text-sm text-base font-semibold leading-6 "
+          >
+            <Image src={logo} alt="Afin Tech Logo" className="w-56" />
+          </Link>
+        </div>
+        <div className="hidden lg:flex">
+          <HeaderMenu header_props={header_props} />
+        </div>
+        <div className="flex lg\:block">
+          <LocaleSwitcher lang={lang} />
+        </div>
+      </nav>
+      {/* </Layout> */}
     </header>
   );
 };

@@ -48,7 +48,7 @@
     "title": "Our Management Team",
     "comment": "Afin Technologiesは、政府機関、テック業界等、関連するあらゆる経験、ナレッジを持ち合わせたメンバーによって運営されています。",
     "members": {
-      "Ko": {
+      "0": {
         "fullname": "西山 洸",
         "title": "CEO",
         "description": "慶應義塾大学経済学部卒業後、キャリア官僚として外務省に入省。中国・モンゴル第二課にて対中経済関係業務に従事した後、在中華人民共和国日本国大使館にて勤務。2018年に独立し、韓国・中国・台湾から日本への就職支援事業を展開しつつ、2020年からは機械学習エンジニアとして主に機械翻訳、自然言語処理等の分野に従事。",
@@ -56,7 +56,7 @@
         "facebook_path": "https://www.facebook.com/ko.nishiyama",
         "linkedin_path": "https://www.linkedin.com/in/ko-nishiyama-51945743/"
       },
-      "Woojin": {
+      "1": {
         "fullname": "Woojin Lim",
         "title": "CTO",
         "description": "韓国・漢陽大学を中退後、独学エンジニアとしてのキャリアを開始。ブロックチェーン黎明期には単独で仮想通貨交換所の開発に従事するなど、これまで10年以上にわたり、ブロックチェーン業界にて多種多様な経験を積んだほか、複数のスタートアップにてCTOとしても勤務。",

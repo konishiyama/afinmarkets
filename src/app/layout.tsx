@@ -5,8 +5,8 @@ import { i18n, type Locale } from "../i18n-config";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Afin Markets",
-  description: "World's First On-Chain Forex Markets.",
+  title: "Afin Technologies",
+  description: "World's First On-Chain 24/7 Forex Trading Platform.",
 };
 
 export async function generateStaticParams() {

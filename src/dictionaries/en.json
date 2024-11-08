@@ -1,6 +1,6 @@
 {
   "header_props": {
-    "Product": "Overview",
+    "Product": "Product",
     "Features": "Features",
     "Team": "Team",
     "Join": "Contact"
@@ -8,7 +8,7 @@
   "cover_props": {
     "headline1": "World's first",
     "headline2": "24/7 Tradeable",
-    "headline3": "FX Market",
+    "headline3": " Forex Market",
     "comment1": "Afin Technologies provides",
     "comment2": " an FX market that allows unrestricted trading even on weekends.",
     "comment3": " Enjoy more flexible risk hedging and continuous investment opportunities on our platform",
@@ -17,8 +17,8 @@
     "button2": "Meet the Team"
   },
   "product_props": {
-    "title": "24/7 FX Market with Unmatched Usability",
-    "comment1": "Through blockchain technology, we enable 24/7 trading.",
+    "title": "24/7 Forex Market with Familiar User Experience",
+    "comment1": "Through blockchain technology, we enable 24/7 forex trading.",
     "comment2": "We maintain the familiar UI/UX for easy use, so you can start investing immediately."
   },
   "features_props": {
@@ -48,7 +48,7 @@
     "title": "Our Management Team",
     "comment": "All team members are highly experienced in government and technology industries.",
     "members": {
-      "Ko": {
+      "0": {
         "fullname": "Ko Nishiyama",
         "title": "CEO",
         "description": "Ko is a former diplomat with the Ministry of Foreign Affairs of Japan. Before establishing his own company, Shangri-la Inc., Ko served for four years at MOFA headquarters in Tokyo and at the Japanese Embassy in China. He is also a self-taught full-stack developer with over four years of professional experience in machine learning and blockchain. He speaks Japanese, Korean, Chinese, and English.",
@@ -56,7 +56,7 @@
         "facebook_path": "https://www.facebook.com/ko.nishiyama",
         "linkedin_path": "https://www.linkedin.com/in/ko-nishiyama-51945743/"
       },
-      "Woojin": {
+      "1": {
         "fullname": "Woojin Lim",
         "title": "CTO",
         "description": "Blockchain specialist with over 10 years of professional experience in the field. After leaving the faculty of physics at Hanyang University in Seoul, South Korea, Woojin began his career as a technology specialist. He has held the position of CTO three times at various startups, including two prominent blockchain companies in South Korea.",
