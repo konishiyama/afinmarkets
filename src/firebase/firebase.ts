@@ -20,6 +20,24 @@ class Firebase {
     }
   }
 
+  async addErrorLog(err: any) {
+    try {
+      const errorMessage = err instanceof Error ? err.message : "Unknown error";
+      const errorStack = err instanceof Error ? err.stack : null;
+
+      let docRef = collection(this.db, "errorLog");
+      let dataToAdd = {
+        errorMessage: errorMessage,
+        errorStack: errorStack,
+        sentAt: Timestamp.now().toDate(),
+      };
+      const result = await addDoc(docRef, dataToAdd);
+      return result;
+    } catch (err) {
+      return err;
+    }
+  }
+
   async addWaitingList(formData: FormData) {
     let dataToAdd = {
       name: formData.name,
@@ -32,9 +50,11 @@ class Firebase {
     let docRef = collection(this.db, "waitingList");
     try {
       const result = await addDoc(docRef, dataToAdd);
+      console.log("result:");
+      console.log(result);
       return true;
     } catch (err) {
-      // console.log(err);
+      const errorLogResult = await this.addErrorLog(err);
       return false;
     }
   }
