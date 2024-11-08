@@ -50,8 +50,6 @@ class Firebase {
     let docRef = collection(this.db, "waitingList");
     try {
       const result = await addDoc(docRef, dataToAdd);
-      console.log("result:");
-      console.log(result);
       return true;
     } catch (err) {
       const errorLogResult = await this.addErrorLog(err);
