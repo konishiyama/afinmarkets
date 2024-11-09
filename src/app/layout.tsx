@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: {
-      url: "/openGraphImage.png",
+      url: "https://www.afintech.org/openGraphImage.png",
     },
   },
   twitter: {
