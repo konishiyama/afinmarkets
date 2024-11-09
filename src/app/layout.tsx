@@ -12,16 +12,16 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  openGraph: {
-    images: {
-      url: "https://www.afintech.org/openGraphImage.png",
-    },
-  },
-  twitter: {
-    images: {
-      url: "/openGraphImage.png",
-    },
-  },
+  // openGraph: {
+  //   images: {
+  //     url: "https://www.afintech.org/openGraphImage.png",
+  //   },
+  // },
+  // twitter: {
+  //   images: {
+  //     url: "/openGraphImage.png",
+  //   },
+  // },
 };
 
 export async function generateStaticParams() {
