@@ -13,7 +13,7 @@
     "comment2": " 週末でも制限のない取引が可能な ",
     "comment3": "FXマーケットです",
     "comment4": "自由なリスクヘッジを、そして途切れのない投資機会を皆様に",
-    "button1": "登録はこちら",
+    "button1": "デモ口座開設",
     "button2": "運営陣紹介"
   },
   "product_props": {
@@ -32,7 +32,7 @@
       },
       "2": {
         "title": "使いやすさはそのまま",
-        "comment": "MT4・5や、大手取引所の慣れ親しんだUI/UXを取り入れ、使いやすさにこだわり、他マーケットからの移行される場合でも、すぐに慣れていただけるように工夫しました。もちろん、各種テクニカル指標も、利用が可能です。"
+        "comment": "MT4・5や、大手取引所の慣れ親しんだUI/UXを取り入れ、使いやすさにこだわり、他マーケットから移行される場合でも、すぐに慣れていただけるように工夫しました。もちろん、各種テクニカル指標も、利用が可能です。"
       },
       "3": {
         "title": "自由なAPI提供",
@@ -42,12 +42,12 @@
   },
   "team_props": {
     "title": "Our Management Team",
-    "comment": "Afin Technologiesは、政府機関、テック業界等、関連するあらゆる経験、ナレッジを持ち合わせたメンバーによって運営されています。",
+    "comment": "Afin Technologiesは、政府機関、テック・金融業界等、関連するあらゆる経験、ナレッジを持ち合わせたメンバーによって運営されています。",
     "members": {
       "0": {
         "fullname": "西山 洸",
         "title": "CEO",
-        "description": "慶應義塾大学経済学部卒業後、キャリア官僚として外務省に入省。中国・モンゴル第二課にて対中経済関係業務に従事した後、在中華人民共和国日本国大使館にて勤務。2018年に独立し、韓国・中国・台湾から日本への就職支援事業を展開しつつ、2020年からは機械学習エンジニアとして主に機械翻訳、自然言語処理等の分野に従事。",
+        "description": "慶應義塾大学経済学部卒業後、キャリア官僚として外務省に入省。中国・モンゴル第二課にて対中経済関係業務に従事した後、在中華人民共和国日本国大使館にて勤務。2018年に独立後。機械学習エンジニアとして主に機械翻訳、自然言語処理等の分野に従事しつつ、アルゴリズムFXトレーダーとしても活動。",
         "img_path": "konishiyama.jpg",
         "facebook_path": "https://www.facebook.com/ko.nishiyama",
         "linkedin_path": "https://www.linkedin.com/in/ko-nishiyama-51945743/"
@@ -56,26 +56,26 @@
         "fullname": "Woojin Lim",
         "title": "CTO",
         "description": "韓国・漢陽大学を中退後、独学エンジニアとしてのキャリアを開始。ブロックチェーン黎明期には単独で仮想通貨交換所の開発に従事するなど、これまで10年以上にわたり、ブロックチェーン業界にて多種多様な経験を積んだほか、複数のスタートアップにてCTOとしても勤務。",
-        "img_path": "konishiyama.jpg",
+        "img_path": "",
         "facebook_path": "",
         "linkedin_path": ""
       }
     }
   },
   "join_props": {
-    "title1": "Afin Technologiesサービス開始 ",
-    "titleBlue": "ウェイティングリスト ",
-    "title2": "登録",
-    "comment": "サービスの正式な開始時期や、重要なお知らせについて、ご登録のメールアドレスにご案内いたします。※別途お問い合わせ内容がある場合はメッセージにご記入ください。",
+    "title1": "Afin Technologies ",
+    "title2": "デモ口座開設 ",
+    "title3": "申請フォーム",
+    "comment": "実際に投資する前に、まずはデモ口座をお試しください。お問い合わせについても、こちらのフォームから送信可能です。",
     "placeholderName": "お名前（必須項目）",
     "placeholderEmail": "Emailアドレス（必須項目）",
-    "placeholderCountry": "地域（選択項目）",
+    "placeholderCountry": "都道府県（選択項目）",
     "placeholderMessage": "メッセージ（選択項目）",
     "submitButton": "登録する",
     "successfulModalTitle": "登録成功",
     "errorModalTitle": "登録失敗",
-    "successfulModalComment": "ウェイティングリストへの登録に成功しました。サービスの正式ローンチまでしばらくお待ち下さい！",
-    "errorModalComment": "登録に失敗しました。ネットワーク等を確認の上、はじめからお試しください。",
+    "successfulModalComment": "デモ口座開設申し込み/お問い合わせを受け付けました。弊社からの連絡をお待ち下さい。",
+    "errorModalComment": "送信に失敗しました。ネットワーク等を確認の上、はじめからお試しください。",
     "successfulModalButton": "閉じる",
     "errorModalButton": "閉じる"
   },

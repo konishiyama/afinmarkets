@@ -88,8 +88,8 @@ export interface FormData {
 export interface JoinProps {
   join_props: {
     title1: string;
-    titleBlue: string;
     title2: string;
+    title3: string;
     comment: string;
     placeholderName: string;
     placeholderEmail: string;

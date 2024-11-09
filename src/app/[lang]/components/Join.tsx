@@ -71,8 +71,8 @@ const Join = ({ join_props, lang }: JoinProps) => {
           <div className="max-w-lg mb-8 mx-auto">
             <h2 className="mb-4 text-4xl font-bold font-heading">
               {join_props.title1}
-              <span className="text-purple">{join_props.titleBlue}</span>
-              {join_props.title2}
+              <span className="text-purple">{join_props.title2}</span>
+              {join_props.title3}
             </h2>
             <p className="mb-8 wow animate__animated animate__fadeIn">
               {join_props.comment}

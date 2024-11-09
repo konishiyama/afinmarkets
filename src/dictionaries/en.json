@@ -13,13 +13,13 @@
     "comment2": " an FX market that allows unrestricted trading even on weekends.",
     "comment3": " Enjoy more flexible risk hedging and continuous investment opportunities on our platform",
     "comment4": "",
-    "button1": "Register Here",
+    "button1": "Ask for Demo",
     "button2": "Meet the Team"
   },
   "product_props": {
     "title": "24/7 Forex Market with Familiar User Experience",
     "comment1": "Through blockchain technology, we enable 24/7 forex trading.",
-    "comment2": "We maintain the familiar UI/UX for easy use, so you can start investing immediately."
+    "comment2": "Also, we provide the familiar UI/UX for easy use, so you can start investing immediately."
   },
   "features_props": {
     "headline1": "We are",
@@ -32,7 +32,7 @@
       },
       "2": {
         "title": "Ease of Use",
-        "comment": "We've incorporated the familiar UI/UX of MT4/MT5, and other major exchanges, making it easy for users a smooth transition from other trading platforms. Of course, various technical indicators are available for use."
+        "comment": "We've incorporated the familiar UI/UX of MT4/MT5 and other major exchanges, making it easy for users a smooth transition from other trading platforms. Of course, various technical indicators are available for use."
       },
       "3": {
         "title": "Flexible API Access",
@@ -47,7 +47,7 @@
       "0": {
         "fullname": "Ko Nishiyama",
         "title": "CEO",
-        "description": "Ko is a former diplomat with the Ministry of Foreign Affairs of Japan. Before establishing his own company, Shangri-la Inc., Ko served for four years at MOFA headquarters in Tokyo and at the Japanese Embassy in China. He is also a self-taught full-stack developer with over four years of professional experience in machine learning and blockchain. He speaks Japanese, Korean, Chinese, and English.",
+        "description": "Ko is a former diplomat with the Ministry of Foreign Affairs of Japan. Before establishing his own company, Shangri-la Inc., Ko served for four years at MOFA headquarters in Tokyo and at the Japanese Embassy in China. He is also a self-taught full-stack developer with over four years of professional experience in machine learning and algorithmic trading. He speaks Japanese, Korean, Chinese, and English.",
         "img_path": "konishiyama.jpg",
         "facebook_path": "https://www.facebook.com/ko.nishiyama",
         "linkedin_path": "https://www.linkedin.com/in/ko-nishiyama-51945743/"
@@ -56,7 +56,7 @@
         "fullname": "Woojin Lim",
         "title": "CTO",
         "description": "Blockchain specialist with over 10 years of professional experience in the field. After leaving the faculty of physics at Hanyang University in Seoul, South Korea, Woojin began his career as a technology specialist. He has held the position of CTO three times at various startups, including two prominent blockchain companies in South Korea.",
-        "img_path": "konishiyama.jpg",
+        "img_path": "",
         "facebook_path": "",
         "linkedin_path": ""
       }
@@ -64,9 +64,9 @@
   },
   "join_props": {
     "title1": "Sign up for our ",
-    "titleBlue": "Waiting list ",
-    "title2": "to get the notice!",
-    "comment": "You will be informed the official launch of our service and important notices! *You can also add some messages for any inquiries.",
+    "title2": "Demo Account ",
+    "title3": "to get started!",
+    "comment": "Before actually investing, try our demo trading platform! You can also send us some inquiries if you need.",
     "placeholderName": "Name**",
     "placeholderEmail": "Email**",
     "placeholderCountry": "Your country *If any",
@@ -74,7 +74,7 @@
     "submitButton": "Sign Up",
     "successfulModalTitle": "Sign up successful!",
     "errorModalTitle": "Sign up error",
-    "successfulModalComment": "Sign Up has been successfully submitted!",
+    "successfulModalComment": "Sign Up has been successfully submitted! Please wait for our contact.",
     "errorModalComment": "Sign Up failed. Please try it again.",
     "successfulModalButton": "Got it, thanks!",
     "errorModalButton": "Try it again"
