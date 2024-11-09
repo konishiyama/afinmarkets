@@ -14,12 +14,12 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: {
-      url: "/public/images/openGraphImage.png",
+      url: "/images/openGraphImage.png",
     },
   },
   twitter: {
     images: {
-      url: "/public/images/openGraphImage.png",
+      url: "/images/openGraphImage.png",
     },
   },
 };
