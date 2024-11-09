@@ -2,24 +2,24 @@
   "header_props": {
     "Product": "概要",
     "Features": "特徴",
-    "Team": "チーム",
-    "Join": "コンタクト"
+    "Team": "運営陣",
+    "Join": "デモ口座開設"
   },
   "cover_props": {
     "headline1": "",
     "headline2": " 365日24時間 ",
     "headline3": "取引可能　FXマーケット",
-    "comment1": "Afinマーケットは",
+    "comment1": "Afin Technologiesは",
     "comment2": " 週末でも制限のない取引が可能な ",
-    "comment3": "FXマーケットです",
-    "comment4": "自由なリスクヘッジを、そして途切れのない投資機会を皆様に",
+    "comment3": "唯一のプラットフォームを提供します。",
+    "comment4": "自由なリスクヘッジを、そして途切れのない投資機会を皆様に。",
     "button1": "デモ口座開設",
     "button2": "運営陣紹介"
   },
   "product_props": {
     "title": "24時間365日運営FXマーケット、使いやすさ、そのままに",
     "comment1": "ブロックチェーン技術を通じ、24時間365日の取引を実現。",
-    "comment2": "従来のUI/UXをできる限り踏襲、使いやすさそのまま、投資を始められます。"
+    "comment2": "従来のUI/UXをできる限り踏襲し、使いやすさをそのままに投資を始められます。"
   },
   "features_props": {
     "headline1": "We are ",
@@ -36,12 +36,12 @@
       },
       "3": {
         "title": "自由なAPI提供",
-        "comment": "多くのFX取引所では、APIを利用したアルゴリズムトレーディングに制限がかけられていることがほとんどです。我々のプラットフォームでは、取引額等の制限なく、自由にREST APIを利用できるようにしました。"
+        "comment": "多くのFX取引所では、APIを利用したアルゴリズムトレーディングに制限がかけられていることがほとんどです。我々のプラットフォームでは、取引額等の制限なく、自由にRESTfulなAPIを利用できるようにしました。"
       }
     }
   },
   "team_props": {
-    "title": "Our Management Team",
+    "title": "運営陣紹介",
     "comment": "Afin Technologiesは、政府機関、テック・金融業界等、関連するあらゆる経験、ナレッジを持ち合わせたメンバーによって運営されています。",
     "members": {
       "0": {

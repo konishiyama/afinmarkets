@@ -11,7 +11,7 @@
     "headline3": " Forex Market",
     "comment1": "Afin Technologies provides",
     "comment2": " an FX market that allows unrestricted trading even on weekends.",
-    "comment3": " Enjoy more flexible risk hedging and continuous investment opportunities on our platform",
+    "comment3": " Enjoy more flexible risk hedging and continuous investment opportunities on our platform.",
     "comment4": "",
     "button1": "Ask for Demo",
     "button2": "Meet the Team"
@@ -19,7 +19,7 @@
   "product_props": {
     "title": "24/7 Forex Market with Familiar User Experience",
     "comment1": "Through blockchain technology, we enable 24/7 forex trading.",
-    "comment2": "Also, we provide the familiar UI/UX for easy use, so you can start investing immediately."
+    "comment2": "Also, we provide familiar UI/UX for easy use, so you can start investing immediately."
   },
   "features_props": {
     "headline1": "We are",
@@ -42,7 +42,7 @@
   },
   "team_props": {
     "title": "Our Management Team",
-    "comment": "All team members are highly experienced in government and technology industries.",
+    "comment": "All the members are highly experienced in finance and technology industries.",
     "members": {
       "0": {
         "fullname": "Ko Nishiyama",
