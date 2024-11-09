@@ -12,7 +12,7 @@ const Cover = ({ cover_props }: CoverProps) => {
       className="flex flex-wrap items-center pt-16 pb-8 md:min-h-2xl md:py-32 xl:pt-0 bg-cover bg-center xl:min-h-screen"
       style={{ backgroundImage: `url(${coverImage.src})` }}
     >
-      <div className="w-full text-white px-8 lg:px-16 xl:px-32">
+      <div className="w-full text-white px-8 py-8 lg:px-16 xl:px-32">
         <div className="max-w-lg lg:max-w-md lg:mx-0 mb-8 text-center md:text-left">
           <h2 className="text-3xl lg:text-5xl mb-4 font-bold font-heading wow animate__animated animate__fadeIn">
             {cover_props.headline1}
