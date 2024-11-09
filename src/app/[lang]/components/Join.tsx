@@ -188,7 +188,7 @@ const Join = ({ join_props, lang }: JoinProps) => {
                         type="button"
                         className={`inline-flex justify-center rounded-md border border-transparent ${
                           signUpResult
-                            ? "bg-blue-100 text-blue-900 hover:bg-blue-200"
+                            ? "bg-palePurple text-white hover:opacity-90"
                             : "bg-red-100 text-red-900 hover:bg-red-200"
                         } px-4 py-2 text-sm font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2`}
                         onClick={closeModal}

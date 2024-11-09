@@ -36,7 +36,7 @@ const Cover = ({ cover_props }: CoverProps) => {
             {cover_props.button1}
           </Link>
           <Link
-            className="block sm:inline-block hover-up-2 py-4 px-8 text-xs text-base hover:opacity-90 font-semibold leading-none bg-white border border-blueGray-200 hover:border-blueGray-300 rounded wow animate__animated animate__fadeIn"
+            className="block sm:inline-block hover-up-2 py-4 px-8 text-xs text-base hover:opacity-90 font-semibold leading-none bg-white border-none rounded wow animate__animated animate__fadeIn"
             data-wow-delay=".3s"
             href="#Team"
           >
