@@ -44,7 +44,7 @@ class Firebase {
       email: formData.email,
       country: formData.country,
       message: formData.message,
-      language: formData.language,
+      userLocale: formData.userLocale,
       sentAt: Timestamp.now().toDate(),
     };
     let docRef = collection(this.db, "waitingList");

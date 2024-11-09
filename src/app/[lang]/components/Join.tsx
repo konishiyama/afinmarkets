@@ -12,7 +12,6 @@ import { useRouter } from "next/navigation";
 const Join = ({ join_props, lang }: JoinProps) => {
   const firebase = getFirebaseInstance();
   const router = useRouter();
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [country, setCountry] = useState("");
@@ -27,6 +26,7 @@ const Join = ({ join_props, lang }: JoinProps) => {
   );
   const [signUpResult, setSignUpResult] = useState(true);
   const [modalOpen, setModalOpen] = useState(false);
+  const userLocale = navigator.language || "";
 
   function closeModal() {
     setModalOpen(false);
@@ -46,7 +46,7 @@ const Join = ({ join_props, lang }: JoinProps) => {
       email: email,
       country: country,
       message: message,
-      language: lang,
+      userLocale: userLocale,
     };
     const res: boolean = await firebase.addWaitingList(formData);
     if (res) {
@@ -129,14 +129,6 @@ const Join = ({ join_props, lang }: JoinProps) => {
                   placeholder={join_props.placeholderMessage}
                 ></textarea>
               </div>
-              {/* for user's language specification*/}
-              <input
-                name="lang"
-                value={lang}
-                className=""
-                hidden
-                type="text"
-              ></input>
               <div className="flex w-full items-center">
                 <button
                   className="w-full py-4 px-8 text-sm text-white font-semibold leading-none bg-purple hover:opacity-90 rounded"

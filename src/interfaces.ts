@@ -82,7 +82,7 @@ export interface FormData {
   email: string;
   country: string;
   message: string;
-  language: Locale;
+  userLocale: string;
 }
 
 export interface JoinProps {

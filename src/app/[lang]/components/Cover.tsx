@@ -1,8 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
-import Layout from "./layouts/Layout";
 import coverImage from "/public/images/cover_pic.png"; // Your image path
 import { CoverProps } from "@/interfaces";
 
