@@ -36,12 +36,14 @@ const Footer = ({ footer_props, lang }: FooterProps) => {
                 Contacts
               </p>
               <p className="lg:text-lg">{footer_props.phone}</p>
-              <p className="lg:text-lg">{footer_props.email}</p>
+              <a href={`mailto:${footer_props.email}`} className="lg:text-lg">
+                {footer_props.email}
+              </a>
             </div>
           </div>
           <div className="flex flex-col lg:flex-row items-center lg:justify-between">
             <p className="text-sm">
-              © 2024. Shangri-la Inc. All rights reserved.
+              © 2024-Present. Shangri-la Co., Ltd. All rights reserved.
             </p>
           </div>
         </div>
