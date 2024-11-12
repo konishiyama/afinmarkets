@@ -19,6 +19,9 @@ export async function generateMetadata({
   return {
     title: dictionary.page.title,
     description: dictionary.page.description,
+    icons: {
+      icon: "/favicon.ico",
+    },
   };
 }
 
