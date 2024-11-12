@@ -7,6 +7,14 @@ import GoogleAnalytics from "@/lib/GoogleAnalytics";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.afintech.org"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      en: "/en",
+      ja: "/ja",
+    },
+  },
   title: "Afin Technologies - 24/7 Forex Trading",
   description: "World's First On-Chain 24/7 Forex Trading Platform.",
   icons: {
