@@ -10,20 +10,20 @@ import Team from "./components/Team";
 import Join from "./components/Join";
 import Footer from "./components/Footer";
 
-export async function generateMetadata({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-}) {
-  const dictionary = await getDictionary(lang);
-  return {
-    title: dictionary.page.title,
-    description: dictionary.page.description,
-    icons: {
-      icon: "/favicon.ico",
-    },
-  };
-}
+// export async function generateMetadata({
+//   params: { lang },
+// }: {
+//   params: { lang: Locale };
+// }) {
+//   const dictionary = await getDictionary(lang);
+//   return {
+//     title: dictionary.page.title,
+//     description: dictionary.page.description,
+//     icons: {
+//       icon: "/favicon.ico",
+//     },
+//   };
+// }
 
 export default async function IndexPage({
   params: { lang },

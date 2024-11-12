@@ -7,21 +7,27 @@ import GoogleAnalytics from "@/lib/GoogleAnalytics";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  // title: "Afin Technologies - 24/7 Forex Trading",
-  // description: "World's First On-Chain 24/7 Forex Trading Platform.",
-  // icons: {
-  //   icon: "/favicon.ico",
-  // },
-  // openGraph: {
-  //   images: {
-  //     url: "https://www.afintech.org/openGraphImage.png",
-  //   },
-  // },
-  // twitter: {
-  //   images: {
-  //     url: "/openGraphImage.png",
-  //   },
-  // },
+  title: "Afin Technologies - 24/7 Forex Trading",
+  description: "World's First On-Chain 24/7 Forex Trading Platform.",
+  icons: {
+    icon: "/favicon.ico",
+  },
+  openGraph: {
+    images: [
+      {
+        url: "/openGraphImage.png",
+        alt: "Afin Technologies Cover",
+      },
+    ],
+  },
+  twitter: {
+    images: [
+      {
+        url: "/openGraphImage.png",
+        alt: "Afin Technologies Cover",
+      },
+    ],
+  },
 };
 
 export async function generateStaticParams() {
