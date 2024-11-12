@@ -1,4 +1,11 @@
 {
+  "page": {
+    "title": "Afin Technologies - 24時間365日取引可能なFXマーケット",
+    "description": "週末も、祝日も関係なく、いつでも取引が可能なFX取引所です。",
+    "icons": {
+      "icon": "/favicon.ico"
+    }
+  },
   "header_props": {
     "Product": "概要",
     "Features": "特徴",

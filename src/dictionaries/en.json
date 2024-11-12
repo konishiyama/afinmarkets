@@ -1,4 +1,11 @@
 {
+  "page": {
+    "title": "Afin Technologies - 24/7 Forex Trading",
+    "description": "World's First On-Chain 24/7 Forex Trading Platform.",
+    "icons": {
+      "icon": "/favicon.ico"
+    }
+  },
   "header_props": {
     "Product": "Product",
     "Features": "Features",
@@ -10,7 +17,7 @@
     "headline2": "24/7 Tradeable",
     "headline3": " Forex Market",
     "comment1": "Afin Technologies provides",
-    "comment2": " an FX market that allows unrestricted trading even on weekends.",
+    "comment2": " an FX market that allows trading even on weekends.",
     "comment3": " Enjoy more flexible risk hedging and continuous investment opportunities on our platform.",
     "comment4": "",
     "button1": "Demo Account",
