@@ -7,37 +7,37 @@ import openGraphImage from "/public/images/openGraphImage.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// export const metadata: Metadata = {
-//   metadataBase: new URL("https://www.afintech.org"),
-//   alternates: {
-//     canonical: "/",
-//     languages: {
-//       en: "/en",
-//       ja: "/ja",
-//     },
-//   },
-//   title: "Afin Technologies - 24/7 Forex Trading",
-//   description: "World's First On-Chain 24/7 Forex Trading Platform.",
-//   icons: {
-//     icon: "/favicon.ico",
-//   },
-//   openGraph: {
-//     images: [
-//       {
-//         url: openGraphImage.src,
-//         alt: "Afin Technologies Cover",
-//       },
-//     ],
-//   },
-//   twitter: {
-//     images: [
-//       {
-//         url: openGraphImage.src,
-//         alt: "Afin Technologies Cover",
-//       },
-//     ],
-//   },
-// };
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.afintech.org"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      en: "/en",
+      ja: "/ja",
+    },
+  },
+  title: "Afin Technologies - 24/7 Forex Trading",
+  description: "World's First On-Chain 24/7 Forex Trading Platform.",
+  icons: {
+    icon: "/favicon.ico",
+  },
+  openGraph: {
+    images: [
+      {
+        url: openGraphImage.src,
+        alt: "Afin Technologies Cover",
+      },
+    ],
+  },
+  twitter: {
+    images: [
+      {
+        url: openGraphImage.src,
+        alt: "Afin Technologies Cover",
+      },
+    ],
+  },
+};
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
