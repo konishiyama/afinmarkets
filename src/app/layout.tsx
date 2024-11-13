@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { i18n, type Locale } from "../i18n-config";
 import GoogleAnalytics from "@/lib/GoogleAnalytics";
+import openGraphImage from "/public/images/openGraphImage.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "/openGraphImage.png",
+        url: openGraphImage.src,
         alt: "Afin Technologies Cover",
       },
     ],
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     images: [
       {
-        url: "/openGraphImage.png",
+        url: openGraphImage.src,
         alt: "Afin Technologies Cover",
       },
     ],
