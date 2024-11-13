@@ -21,25 +21,6 @@ export async function generateMetadata({
   return {
     title: dictionary.page.title,
     description: dictionary.page.description,
-    icons: {
-      icon: "/favicon.ico",
-    },
-    openGraph: {
-      images: [
-        {
-          url: openGraphImage.src,
-          alt: "Afin Technologies Cover",
-        },
-      ],
-    },
-    twitter: {
-      images: [
-        {
-          url: openGraphImage.src,
-          alt: "Afin Technologies Cover",
-        },
-      ],
-    },
   };
 }
 
