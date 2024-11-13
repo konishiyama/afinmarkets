@@ -10,20 +10,38 @@ import Team from "./components/Team";
 import Join from "./components/Join";
 import Footer from "./components/Footer";
 
-// export async function generateMetadata({
-//   params: { lang },
-// }: {
-//   params: { lang: Locale };
-// }) {
-//   const dictionary = await getDictionary(lang);
-//   return {
-//     title: dictionary.page.title,
-//     description: dictionary.page.description,
-//     icons: {
-//       icon: "/favicon.ico",
-//     },
-//   };
-// }
+import openGraphImage from "/public/images/openGraphImage.png";
+
+export async function generateMetadata({
+  params: { lang },
+}: {
+  params: { lang: Locale };
+}) {
+  const dictionary = await getDictionary(lang);
+  return {
+    title: dictionary.page.title,
+    description: dictionary.page.description,
+    icons: {
+      icon: "/favicon.ico",
+    },
+    openGraph: {
+      images: [
+        {
+          url: openGraphImage.src,
+          alt: "Afin Technologies Cover",
+        },
+      ],
+    },
+    twitter: {
+      images: [
+        {
+          url: openGraphImage.src,
+          alt: "Afin Technologies Cover",
+        },
+      ],
+    },
+  };
+}
 
 export default async function IndexPage({
   params: { lang },
