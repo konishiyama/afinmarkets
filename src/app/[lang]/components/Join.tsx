@@ -26,7 +26,7 @@ const Join = ({ join_props, lang }: JoinProps) => {
   );
   const [signUpResult, setSignUpResult] = useState(true);
   const [modalOpen, setModalOpen] = useState(false);
-  // const userLocale = navigator.language || "";
+  const userLocale = navigator.language || "";
 
   function closeModal() {
     setModalOpen(false);
@@ -46,7 +46,7 @@ const Join = ({ join_props, lang }: JoinProps) => {
       email: email,
       country: country,
       message: message,
-      userLocale: navigator.language || "",
+      userLocale: userLocale,
     };
     const res: boolean = await firebase.addWaitingList(formData);
     if (res) {
